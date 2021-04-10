@@ -2,22 +2,49 @@
     box-sizing: border-box;
 }
 body{
-    background-color: rgb(0, 26, 51);
+    background-color: rgb(6, 13, 20);
 }
+/*.carousel{
+    width: 600px;
+    height: 350px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+.box{
+    position: absolute;
+    width: 500%;
+    height: 350px;
+    object-fit: cover;
+    display: flex;
+    animation: slide 12.5 ease-in infinite;
+    animation-delay: o.8s;
+}
+.slide{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+@keyframes slide{
+    0%{left: 0%;}
+    24%{left: -100%;}
+    48%{left: -200%;}
+    72%{left: -300%;}
+    96%{left: -400%;}
+    100%{left: -400%;}
+} */
 h2{
     text-align: center;
-    background-color: blueviolet;
+    background-color:rgb(126, 7, 7);
 }
 h3{
     color: white;
 }
 p{
     color: white;
-}
-.sencillos{
-    display: flex;
-    flex-wrap: wrap;
-
 }
 .artistas{
     display: flex;
@@ -26,43 +53,68 @@ p{
     text-align: center;
 }
 .img-art{
-    border-radius: 98%;
+    border-radius: 50%;
 }
 .art{
     text-align: center;
 }
-.album{
+/*.album{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
+*/
 img{
     width: 100%;
 }
  @media (min-width: 768px) {
 .sencillos{
-    width: 50%;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.sencillos article{
+    width: 40%;
 }
 .artistas{
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.artistas article{
+    width: 40%;
 }
 .album{
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.album article{
+    width: 40%;
 }
 
 }
  @media (min-width: 1024px) {
   .sencillos{
-    width: 33%;
     justify-content: space-around;
   }
+  .sencillos article{
+    width: 30%;
+}
   .artistas{
     width: 33%;
     justify-content: space-around;
-  }
+}
+  .artistas article{
+    width: 40%;
+}
   .album{
     width: 33%;
     justify-content: space-around;
-  }
+}
+  .album article{
+    width: 40%;
+}
+
 }
