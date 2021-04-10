@@ -28,6 +28,9 @@ p{
 .img-art{
     border-radius: 98%;
 }
+.art{
+    text-align: center;
+}
 .album{
     display: flex;
     flex-wrap: wrap;
@@ -40,14 +43,26 @@ img{
 .sencillos{
     width: 50%;
     justify-content: space-between;
-    
+}
+.artistas{
+    width: 50%;
+}
+.album{
+    width: 50%;
+}
+
 }
  @media (min-width: 1024px) {
   .sencillos{
     width: 33%;
     justify-content: space-around;
   }
-
-
-
+  .artistas{
+    width: 33%;
+    justify-content: space-around;
+  }
+  .album{
+    width: 33%;
+    justify-content: space-around;
+  }
 }
