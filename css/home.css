@@ -1,0 +1,45 @@
+*{ 
+    box-sizing: border-box;
+}
+h2{
+    text-align: center;
+    background-color: blueviolet;
+}
+.sencillos{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.artistas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.img-art{
+    border-radius: 98%;
+}
+.album{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+img{
+    width: 100%;
+}
+@media (min-width: 768px) {
+.sencillos{
+    width: 50%;
+    justify-content: space-between;
+    
+}
+img{
+    width: 100vh;
+}
+
+
+}
+@media (min-width: 1024px) {
+
+
+
+}
