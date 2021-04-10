@@ -8,7 +8,7 @@ h2{
 .sencillos{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+
 }
 .artistas{
     display: flex;
@@ -32,13 +32,11 @@ img{
     justify-content: space-between;
     
 }
-img{
-    width: 100vh;
-}
-
-
-}
 @media (min-width: 1024px) {
+  .sencillos{
+    width: 33%;
+    justify-content: space-around;
+  }
 
 
 
