@@ -1,9 +1,18 @@
 *{ 
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(0, 26, 51);
+}
 h2{
     text-align: center;
     background-color: blueviolet;
+}
+h3{
+    color: white;
+}
+p{
+    color: white;
 }
 .sencillos{
     display: flex;
@@ -14,6 +23,7 @@ h2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    text-align: center;
 }
 .img-art{
     border-radius: 98%;
@@ -26,13 +36,13 @@ h2{
 img{
     width: 100%;
 }
-@media (min-width: 768px) {
+ @media (min-width: 768px) {
 .sencillos{
     width: 50%;
     justify-content: space-between;
     
 }
-@media (min-width: 1024px) {
+ @media (min-width: 1024px) {
   .sencillos{
     width: 33%;
     justify-content: space-around;
