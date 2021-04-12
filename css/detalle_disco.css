@@ -5,16 +5,19 @@ body{
     background-color:  rgb(6, 13, 20);
 }
 .primera_seccion{
-    padding: 12px;
+    padding: 40px 40px 20px 50px;
     margin: 30px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
-.primera_seccion img{
+.primera_seccion .imagen{
     width: 30%
 }
-
+.primera_seccion img{
+    width: 100%;
+    border-radius: 10px;
+}
 .primera_seccion article{
     color: #A7A7A7;
     padding: 40px;
