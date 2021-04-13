@@ -15,85 +15,62 @@
     <div class="container">
 		<!-- header -->
 		<header class="main-header">
-			<img src="images/logo.jpg" alt="Logotipo Music Boom" class="logo">
-			<nav class="main-nav">
-				<ul>
-					<li><a href="home.html">Home</a></li>
-					<li><a href="playlist.html">Playlist</a></li>
-					<li><a href="genero.html">Género</a></li>
-                    <li><form action="resultados_de_busqueda.html" method="GET">
-                        <div>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" name="Buscador" value="">
-                        </div>
-                        <div>
-                        <label for="Buscador">Buscar</label>
-                        </div>
-                        <div>
-                        <button type="Buscar"><li><i class="fas fa-search"></i></li></button>
-                        </div>
-                        </form>
-                        </i></li>
-				</ul>
-			</nav>
+            <nav class="main-nav">
+                <ul class="bar-ul">
+                     <li><img src="images/logo.jpg" class="logo-header"> </li>
+                     <li class="nav-element"><a href="home.html">Home</a></li>
+                     <li class="nav-element"><a href="playlist.html">Playlist</a></li>
+                     <li class="nav-element"><a href="genero.html">Género</a></li>
+                </ul>
+                <div class="search">
+                    <form action="results.html" method="GET">
+                        <input type="text" class='nav-element'name="Buscar" value="" placeholder="Buscar">
+                        <button class="boton_search"><strong>Buscar</strong></button>
+                    </form>
+                </div>
+            </nav>
 		</header>
 
         <!-- tarjetas géneros -->
+        <h1>Géneros</h1>
         <section class="lista_generos">
-            <h1>Géneros</h1>
-            <div class="card_flamenco">
-				<div class="card-data">
-					<h2>Flamenco</h2>
-					<a class=boton_explorar href="detalle_genero.html">Explorar</a>
-				</div>
-            </div>
-            <div class="card_rocknacional">
-                <div class="card-data">
-                    <h3>RockNacional</h3>
-                    <a class=boton_explorar href="detalle_genero.html">Explorar</a>
-                </div>
-            </div>
-            <div class="card_pop">
-                <div class="card-data">
-                    <h3>Pop</h3>
-                    <a class=boton_explorar href="detalle_genero.html">Explorar</a>
-                </div>
-            </div>
-            <div class="card_clasica">
-                <div class="card-data">
-                    <h3>Clásica</h3>
-                    <a class=boton_explorar href="detalle_genero.html">Explorar</a>
-                </div>
-            </div>
-            <div class="card_90's">
-                <div class="card-data">
-                    <h3>90's</h3>
-                    <a class=boton_explorar href="detalle_genero.html">Explorar</a>
-                </div>
-            </div>
-            <div class="card_jazz">
-                <div class="card-data">
-                    <h3>Jazz</h3>
-                    <a class=boton_explorar href="detalle_genero.html">Explorar</a>
-                </div>
-            </div>
-            <div class="card_Blues">
-                <div class="card-data">
-                    <h3>Blues</h3>
-                    <a class=boton_explorar href="detalle_genero.html">Explorar</a>
-                </div>
-            </div>
-            <div class="card_trap">
-                <div class="card-data">
-                    <h3>Trap</h3>
-                    <a class=boton_explorar href="detalle_genero.html">Explorar</a>
-                </div>
-            </div>
+            <article class="card-flameco">
+                <h2>Flamenco</h2>
+				<a class=boton_explorar href="detalle_genero.html">Explorar</a>
+            </article>  
+            <article class="card-pop">
+                <h2>Pop</h2>
+				<a class=boton_explorar href="detalle_genero.html">Explorar</a>
+            </article>  
+            <article class="card-clasico">
+                <h2>Clásico</h2>
+				<a class=boton_explorar href="detalle_genero.html">Explorar</a>
+            </article>
+            <article class="card-rock_nacional">
+                <h2>Rock Nacional</h2>
+				<a class=boton_explorar href="detalle_genero.html">Explorar</a>
+            </article>  
+            <article class="card-blues">
+                <h2>Blues</h2>
+				<a class=boton_explorar href="detalle_genero.html">Explorar</a>
+            </article>
+            <article class="card-jazz">
+                <h2>Jazz</h2>
+				<a class=boton_explorar href="detalle_genero.html">Explorar</a>
+            </article> 
+            <article class="card-soul">
+                <h2>Soul</h2>
+				<a class=boton_explorar href="detalle_genero.html">Explorar</a>
+            </article>
+            <article class="card-house">
+                <h2>House</h2>
+				<a class=boton_explorar href="detalle_genero.html">Explorar</a>
+            </article> 
         </section>
 
         <!-- footer -->
 		<footer class="main-footer">
-            <img src="images/logo.jpg" alt="Logotipo Music Boom" class="logo">
+            <img src="images/logo.jpg" alt="Logotipo Music Boom" class="logo-footer">
             <p class="derechos">© 2021 Music Boom. All rights reserved.</p>
 			<ul>
 				<li><a href="#"><span class="ion-social-facebook"><ion-icon name="logo-facebook"></ion-icon></span></a></li>
