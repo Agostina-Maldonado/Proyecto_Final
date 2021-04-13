@@ -16,13 +16,13 @@ a{
 /*GENERALES*/
 body{
     background-color:#0A142F;
+    font-family: 'Rubik', sans-serif;
 }
 h1{
-    margin: 1%;
+    margin: 3%;
     color: white;
     font-size: 20px;
 }
-
 /*ESTILO MOBILE*/
 /*header*/
 .main-nav{
