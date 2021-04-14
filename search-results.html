@@ -26,7 +26,9 @@
                 <div class="search">
                     <form action="results.html" method="GET">
                         <input type="text" class='nav-element'name="Buscar" value="" placeholder="Buscar">
-                        <button class="boton_search"><strong>Buscar</strong></button>
+                        <a href="./search-results.html">
+                            <button class="nav-element"> Buscar</button>
+                        </a>
                     </form>
                 </div>
             </nav>
@@ -34,13 +36,84 @@
         <h2>Artistas</h2>
         <article>
             <img src="./images/justin_bieber.jpg" alt="">
-            <h3> Justin Bieber</h3>
+            <a href="./detalle_artistas.html"> Justin Bieber</a>
         </article>
         <h2>albumes</h2>
-        <article>
+        <section class="search-album">
+            <article>
+                <img src="./images/justin-bieber-justice.jpeg" alt="">
+                <a href="./detalle_disco.html"> Justice</a>
+            </article> 
+            <article>
             <img src="./images/justin-bieber-justice.jpeg" alt="">
             <a href="./detalle_disco.html"> Justice</a>
-        </article>
+            </article>
+        </section>
+        <section class="search-songs">
+            <article>
+                <div class="player">
+                    <i class="far fa-play-circle"></i></div>
+                </div>
+                <div class="texto">
+                    <h4><a href="detalle_cancion.html">Peaches</a></h4>
+                    <p>167,465,750</p>
+                </div>
+            </article>
+            <article>
+                <div class="player">
+                    <i class="far fa-play-circle"></i>
+                </div>
+                <div class="texto">
+                    <h4><a href="detalle_cancion.html">Hold on</a></h4>
+                    <p>121,890,776</p>
+                </div>
+            </article>
+            <article>
+                <div class="player">
+                    <i class="far fa-play-circle"></i>
+                </div>
+                <div class="texto">
+                    <h4><a href="detalle_cancion.html">Anyone</a></h4>
+                    <p>225,331,610</p>
+                </div>
+            </article>
+            <article>
+                <div class="player">
+                    <i class="far fa-play-circle"></i>
+                </div>
+                <div class="texto">
+                    <h4><a href="detalle_cancion.html">Holy</a></h4>
+                    <p>409,485,779</p>
+                </div>
+            </article>
+            <article>
+                <div class="player">
+                    <i class="far fa-play-circle"></i>
+                </div>
+                <div class="texto">
+                    <h4><a href="detalle_cancion.html">Lonely</a></h4>
+                    <p>376,395,908</p>
+                </div>
+            </article>
+            <article>
+                <div class="player">
+                    <i class="far fa-play-circle"></i>
+                </div>
+                <div class="texto">
+                    <h4><a href="detalle_cancion.html">2 Much</a></h4>
+                    <p>267,465,750</p>
+                </div>
+            </article>
+            <article>
+                <div class="player">
+                    <i class="far fa-play-circle"></i>
+                </div>
+                <div class="texto">
+                    <h4><a href="detalle_cancion.html">Deserve You</a></h4>
+                    <p>127,455,250</p>
+                </div>
+            </article>        
+        </section>
     </div>
 </body>
 </html>
