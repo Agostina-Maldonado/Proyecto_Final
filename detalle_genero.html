@@ -17,69 +17,81 @@
 		<header class="main-header">
             <nav class="main-nav">
                 <ul class="bar-ul">
-                  <li>
-                     <img src="images/logo.jpg" class="logo-img"> </li>
+                     <li><img src="images/logo.jpg" class="logo-header"> </li>
                      <li class="nav-element"><a href="home.html">Home</a></li>
                      <li class="nav-element"><a href="playlist.html">Playlist</a></li>
                      <li class="nav-element"><a href="genero.html">Género</a></li>
+                </ul>
                 <div class="search">
-                  <input type="text" class="nav-element" name="name">
-                  <button class="nav-element">Buscar</button>
+                    <form action="results.html" method="GET">
+                        <input type="text" class='nav-element'name="Buscar" value="" placeholder="Buscar">
+                        <button class="boton_search"><strong>Buscar</strong></button>
+                    </form>
                 </div>
-			</nav>
+            </nav>
 		</header>
 		
         <!-- tarjetas artistas del género -->
-        <section class="lista_generos">
+        <main class="lista_artistas">
             <h1>Pop</h1>
-            <h2>artistas</h2>
-            <div class="card_artista">
+            <h2>Artistas</h2>
+            <section class="card_artista">
+				<article class="imagen_y_texto">
 				<div class="card-image">
-					<img src="images/ed-sheeran.jpg" alt="Ed Sheeran">
+					<img class="img_artista" src="images/Ed-Sheeran-1.jpg" alt="Ed Sheeran">
 				</div>
 				<div class="card-nombre_artista">
 					<h3>Ed Sheeran</h3>
 					<a class=boton href="detalle_artista.html">Ver más</a>
-            </div>
-            <div class="card_artista">
+				</article>
+            </section>
+            <section class="card_artista">
+				<article class="imagen_y_texto">
 				<div class="card-image">
-					<img src="images/sam_smith.jpg" alt="Sam Smith">
+					<img class="img_artista" src="images/sam_smith.jpg" alt="Sam Smith">
 				</div>
 				<div class="card-nombre_artista">
 					<h3>Sam Smith</h3>
 					<a class=boton href="detalle_artista.html">Ver más</a>
-            </div>
-            <div class="card_artista">
+				</article>
+			</section>
+            <section class="card_artista">
+				<article class="imagen_y_texto">
 				<div class="card-image">
-					<img src="images/lady_gaga.jpg" alt="Lady Gaga">
+					<img class="img_artista" src="images/lady_gaga.jpg" alt="Lady Gaga">
 				</div>
 				<div class="card-nombre_artista">
 					<h3>Lady Gaga</h3>
 					<a class=boton href="detalle_artista.html">Ver más</a>
-            </div>
-            <div class="card_artista">
+				</article>
+			</section>
+            <section class="card_artista">
+				<article class="imagen_y_texto">
 				<div class="card-image">
-					<img src="images/taylor_swift.jpg" alt="Taylor Swift">
+					<img class="img_artista" src="images/taylor-swift.jpg" alt="Taylor Swift">
 				</div>
 				<div class="card-nombre_artista">
 					<h3>Taylor Swift</h3>
 					<a class=boton href="detalle_artista.html">Ver más</a>
-            </div>
-            <div class="card_artista">
+				</article>
+			</section>
+            <section class="card_artista">
+				<article class="imagen_y_texto">
 				<div class="card-image">
-					<img src="images/justin_bieber.jpg" alt="Justin Bieber">
+					<img class="img_artista" src="images/justin_bieber.jpg" alt="Justin Bieber">
 				</div>
 				<div class="card-nombre_artista">
 					<h3>Justin Bieber</h3>
 					<a class=boton href="detalle_artista.html">Ver más</a>
-            </div>
-        </section>
+				</article>
+			</section>
+        </main>
 
         <!-- footer -->
 		<footer class="main-footer">
-            <img src="images/logo.jpg" alt="Logotipo Music Boom" class="logo-footeer">
+            <img src="images/logo.jpg" alt="Logotipo Music Boom" class="logo-footer">
             <p class="derechos">© 2021 Music Boom. All rights reserved.</p>
-			<ul>
+			<ul class="icons-redes">
 				<li><a href="#"><span class="ion-social-facebook"><ion-icon name="logo-facebook"></ion-icon></span></a></li>
 				<li><a href="#"><span class="ion-social-instagram"><ion-icon name="logo-instagram"></ion-icon></span></a></li>
 				<li><a href="#"><span class="ion-social-linkedin"><ion-icon name="logo-linkedin"></ion-icon></span></a></li>

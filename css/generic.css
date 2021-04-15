@@ -23,6 +23,10 @@ h1{
     color: white;
     font-size: 20px;
 }
+h2{
+    color: white;
+    font-size: 18px;
+}
 /*ESTILO MOBILE*/
 /*header*/
 .main-nav{
@@ -71,8 +75,6 @@ h1{
     flex-wrap: wrap;
     align-items: center;
     color:white;
-    width: 100%;
-    margin: 5% auto;
     margin-bottom: 2%;
     border-top:solid 1px white;
     text-align:center;
@@ -85,7 +87,33 @@ h1{
     font-size: 10px;
 }
 .nombres_developers{
-    font-size: 14px;
+    font-size: 12px;
+}
+.icons-redes{
+    flex-direction:row;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+.ion-social-facebook{
+    width: 20%;
+    color: white;
+    font-size: 10px;
+    padding-left: 2%;
+}
+.ion-social-linkedin{
+    width: 20%;
+    color: white;
+    font-size: 10px;
+    padding-left: 2%;
+}
+.ion-social-instagram{
+    width: 20%;
+    color: white;
+    font-size: 10px;
+    padding-left: 2%;
 }
 
 /*GENERO.HTML*/
@@ -96,14 +124,128 @@ h1{
     font-size: auto;
     align-items: center;
 }
-article{
+.card-genero{
     width: 50%;
     background-color:#B91D1D;
     text-align: center;
-    margin: 5%;
+    margin: 4%;
     border-radius: 10%;
     font-size: 13px;
+    font-weight:lighter;
 }
 .boton-explorar{
     font-size: 8px;
+}
+
+/*DETALLEGENERO.HTML*/
+.lista_artistas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.imagen_y_texto{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-artista{
+    width: 100%;
+    text-align: center;
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.img_artista{
+    border-radius: 50%;
+    padding: 2%;
+    width: 35%;
+}
+.card-image{
+    width: 100%;
+}
+.card-nombre_artista{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-nombre_artista h3{
+    font-size: 14px;
+    color: white;
+    width: 100%;
+    margin: 1%;
+}
+.boton{
+    text-decoration:underline;
+    width: 40%;
+    font-size: 10px;
+    padding-left: 1%;
+}
+/*ESTILO DESKTOP*/
+@media (min-width: 1024px) {
+    /*header*/
+    .main-nav{
+    flex-direction: row;
+    font-size: 20px;
+    margin: 0%
+  }
+  .bar-ul{
+    margin: 0%;
+  }
+  .bar-ul li{
+      width: 15%;
+  }
+  .search{
+      width: 5%;
+      margin: 0%;
+  }
+.nav-element{
+    font-size: 15px;
+    color: black;
+}
+.boton_search{
+    font-size: 10px;
+}
+/*GENERALES*/
+h1{
+    font-size: 40px;
+}
+ /*footer*/
+.logo-footer{
+    width: 20%;
+}
+.derechos{
+    font-size: 15px;
+}
+.nombres_developers{
+    font-size: 20px;
+}
+.ion-social-facebook{
+    font-size: 30px;
+}
+.ion-social-linkedin{
+    font-size: 30px;
+}
+.ion-social-instagram{
+    font-size: 30px;
+}
+
+/*GENERO.HTML*/
+.lista_generos{
+    flex-direction: row;
+}
+.card-genero{
+    width: 35%;
+    margin: 3%;
+    font-size: 16px;
+}
+.boton_explorar{
+    font-size: 10px;
+}
 }
