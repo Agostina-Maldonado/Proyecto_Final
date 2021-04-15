@@ -18,14 +18,14 @@ article{
 .search-songs article{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     width: 100%;
     justify-content: space-around;
 }
 .player{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: start;
 }
 @media (min-width: 1024px){
