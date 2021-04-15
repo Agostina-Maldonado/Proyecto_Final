@@ -1,0 +1,41 @@
+*{ 
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(6, 13, 20);
+    font-family: 'Rubik', sans-serif;
+}
+h2{
+    color: white;
+    font-size: 20px;
+}
+img{
+    width: 100%;
+}
+article{
+    width: 100%;
+}
+.search-songs article{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+.player{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+}
+@media (min-width: 1024px){
+    .search-album{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .search-album article{
+        width: 40%;
+    }
+}
