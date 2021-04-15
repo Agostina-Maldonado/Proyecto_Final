@@ -5,14 +5,15 @@ body{
     background-color:  rgb(6, 13, 20);
 }
 .primera_seccion{
-    padding: 40px 40px 20px 50px;
-    margin: 30px;
+  /*  padding: 
+    margin: */
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 }
 .primera_seccion .imagen{
-    width: 30%
+    width: 50%;
+    padding: 50px 10px 10px 30px;
 }
 .primera_seccion img{
     width: 100%;
@@ -20,9 +21,9 @@ body{
 }
 .primera_seccion article{
     color: #A7A7A7;
-    padding: 40px;
-    width: 60%;
-    font-size: larger;
+    padding: 35px;
+    width: 40%;
+    font-size:medium;
 }
 .white{
     color: white;
@@ -39,7 +40,7 @@ article a{
     color:white
 }
 .segunda_seccion article{
-    padding: 7px 50px;
+    padding: 1px 20px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
     display: flex;
@@ -48,10 +49,27 @@ article a{
     justify-content: flex-start;
 }
 .segunda_seccion .player{
-    padding: 45px 70px;
+    padding: 30px 45px 30px 50px;
+    font-size:xx-large;
 
 }
 
 .segunda_seccion .texto{
     padding: 0px 50px;
+    font-size: medium;
+}
+
+@media (min-width: 1024px) {
+    body{
+        margin: 0px 0px 0px 70px;
+    }
+    .primera_seccion .imagen{
+        width: 30%;
+    }
+    .primera_seccion article{
+        padding: 50px;
+    }
+    .segunda_seccion article{
+        padding: 10px ;
+    }
 }

@@ -67,6 +67,7 @@ p{
 img{
     width: 100%;
 }
+
  @media (min-width: 768px) {
 .sencillos{
     display: flex;
@@ -98,23 +99,15 @@ img{
  @media (min-width: 1024px) {
   .sencillos{
     justify-content: space-around;
-  }
-  .sencillos article{
-    width: 30%;
-}
+ }
   .artistas{
-    width: 33%;
     justify-content: space-around;
-}
+    }
   .artistas article{
-    width: 40%;
-}
+    width: 30%;
+    }
   .album{
-    width: 33%;
+    width: 30%;
     justify-content: space-around;
-}
-  .album article{
-    width: 40%;
-}
-
+    }
 }
