@@ -58,3 +58,18 @@ article a{
     padding: 0px 50px;
     font-size: medium;
 }
+
+@media (min-width: 1024px) {
+    body{
+        margin: 0px 0px 0px 70px;
+    }
+    .primera_seccion .imagen{
+        width: 30%;
+    }
+    .primera_seccion article{
+        padding: 50px;
+    }
+    .segunda_seccion article{
+        padding: 10px ;
+    }
+}
