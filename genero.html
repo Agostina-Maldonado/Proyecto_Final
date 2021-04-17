@@ -25,18 +25,16 @@
                      <li class="nav-element"><a href="genero.html">Género</a></li>
                 </ul>
                 <div class="search">
-                    <form action="results.html" method="GET">
+                    <form class="buscador"action="results.html" method="GET">
                         <input type="text" class='nav-element'name="Buscar" value="" placeholder="Buscar">
-                        <a href="./search-results.html">
-                            <button class="nav-element"> Buscar</button>
-                        </a>
+                        <button class="nav-element"> Buscar</button>
                     </form>
                 </div>
             </nav>
 		</header>
 
         <!-- tarjetas géneros -->
-        <h1>Géneros</h1>
+        <h1 class="titulo">Géneros</h1>
         <section class="lista_generos">
             <article class="card-genero">
                 <h2>Flamenco</h2>
@@ -68,6 +66,10 @@
             </article>
             <article class="card-genero">
                 <h2>House</h2>
+				<a class=boton_explorar href="detalle_genero.html">Explorar</a>
+            </article> 
+            <article class="card-genero">
+                <h2>Opera</h2>
 				<a class=boton_explorar href="detalle_genero.html">Explorar</a>
             </article> 
         </section>

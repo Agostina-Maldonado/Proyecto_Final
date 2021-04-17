@@ -18,14 +18,16 @@ body{
     background-color:#0A142F;
     font-family: 'Rubik', sans-serif;
 }
-h1{
+.titulo{
     margin: 3%;
     color: white;
     font-size: 20px;
+    align-self: flex-start;
 }
-h2{
+.subtitulo{
+    margin: 3%;
     color: white;
-    font-size: 18px;
+    font-size: 16px;
 }
 /*ESTILO MOBILE*/
 /*header*/
@@ -54,9 +56,14 @@ h2{
       width: 25%;
   }
   .search{
-      width: 75%;
+      width: 100%;
       align-self: center;
       margin: 1%;
+  }
+  .buscador{
+      display: flex;
+      flex-direction: row;
+
   }
   .boton_explorar{
     text-decoration: underline white;
@@ -95,40 +102,40 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 2%;
+}
+.icons-redes li{
+    margin: 0 10px;
 }
 .ion-social-facebook{
     width: 20%;
     color: white;
     font-size: 10px;
-    padding-left: 2%;
 }
 .ion-social-linkedin{
     width: 20%;
     color: white;
     font-size: 10px;
-    padding-left: 2%;
 }
 .ion-social-instagram{
     width: 20%;
     color: white;
     font-size: 10px;
-    padding-left: 2%;
 }
 
 /*GENERO.HTML*/
 .lista_generos{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     font-size: auto;
-    align-items: center;
+    justify-content: center;
+    padding: 4%;
 }
 .card-genero{
-    width: 50%;
+    width: 80%;
     background-color:#B91D1D;
     text-align: center;
-    margin-bottom: 4%4%;
+    margin-bottom: 4%;
     border-radius: 10%;
     font-size: 13px;
     font-weight:lighter;
@@ -144,13 +151,6 @@ h2{
     flex-wrap: wrap;
     align-items: center;
 }
-.imagen_y_texto{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
 .card-artista{
     width: 100%;
     text-align: center;
@@ -158,34 +158,38 @@ h2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
 }
-.img_artista{
-    border-radius: 50%;
-    padding: 2%;
-    width: 35%;
-}
-.card-image{
+.imagen_y_texto{
     width: 100%;
-}
-.card-nombre_artista{
-    width: 40%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+  }
+
+.img_artista{
+    border-radius: 50%;
+    width: 70px;
+    margin-right: 60px;
+    margin: 20px 20px
+}
+.card-nombre_artista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .card-nombre_artista h3{
     font-size: 14px;
     color: white;
-    width: 100%;
-    margin: 1%;
+    margin-right: 10px;
 }
 .boton{
     text-decoration:underline;
-    width: 40%;
     font-size: 10px;
-    padding-left: 1%;
 }
 /*ESTILO DESKTOP*/
 @media (min-width: 1024px) {
@@ -238,14 +242,14 @@ h1{
 
 /*GENERO.HTML*/
 .lista_generos{
-    flex-direction: row;
+    align-items: center;
 }
 .card-genero{
-    width: 35%;
+    width: 25%;
     margin: 3%;
-    font-size: 16px;
+    font-size: 20px;
 }
 .boton_explorar{
-    font-size: 10px;
+    font-size: 15px;
 }
 }
