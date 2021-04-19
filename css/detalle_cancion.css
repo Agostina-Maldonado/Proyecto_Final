@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: url(../images/cancion_justin.jpg);
+    background-size: contain;
+    
+}
+section{
+    margin: 100px 150px;
+    text-align: center;
+    
+}
+.titulo{
+    color:white;
+}
+.texto{
+    color: #646464;
+}
+.mobile{
+    width: 420px;
+    width: 100%;
+}
+.desktop {
+    display: none;
+}
+ @media (min-width: 1024px){
+    body{
+        background-size: 1024px;
+     }
+    .texto{
+        background-color: #B91D1D;
+        padding: 1px;
+        font-size: large;
+    }
+    .desktop{
+        /*display:;*/
+    }
+    .foto_player{
+        width: 1240px;
+        width: 100%;
+    }
+    .mobile{
+        display: none;
+    }
+}
+ 
