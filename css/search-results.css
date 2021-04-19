@@ -9,6 +9,13 @@ h2{
     color: white;
     font-size: 20px;
 }
+.search-artist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+}
 img{
     width: 100%;
 }
