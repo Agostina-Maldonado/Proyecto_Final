@@ -69,6 +69,9 @@ article a{
     .primera_seccion .imagen{
         width: 30%;
     }
+    .primera_seccion .justin{   
+        width: 100%;
+    }
     .primera_seccion article{
         padding: 50px;
     }
@@ -97,8 +100,8 @@ article a{
     }
     .table tr{
         padding: 15px;
-        border-bottom-style: solid;
-        border-bottom-width: 1px;
+        border-bottom: solid 1px #A7A7A7;
+        line-height: 1.7;
     }
     /* Rectangle 12 */
 
