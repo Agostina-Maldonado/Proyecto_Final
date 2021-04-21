@@ -16,24 +16,24 @@ h2{
     width: 40%;
     justify-content: space-between;
 }
+.search-artist article{
+    width: 40%;
+}
 img{
     width: 100%;
 }
 article{
     width: 100%;
 }
-.search-songs article{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
-}
+
 .player{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: start;
+}
+i{
+    color: white;
 }
 @media (min-width: 1024px){
     .search-album{
@@ -44,5 +44,12 @@ article{
     }
     .search-album article{
         width: 40%;
+    }
+    .img-art{
+        width: 500px;
+    
+    }
+    .segunda_seccion{
+        display: none;
     }
 }

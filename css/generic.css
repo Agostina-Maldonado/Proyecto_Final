@@ -113,6 +113,110 @@ body{
     color: white;
     font-size: 10px;
 }
+/* HOME.HTML*/
+/* Carousel de w3schools*/
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
+  
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .prev {
+      left: 0;
+      border-radius: 3px 0 0 3px;
+    }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 12px 2px;
+    background-color:#7acfe8;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #316c7d;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+ 
+  /* termina carousel*/
+
+.titulos-home{
+    text-align: center;
+    background-color:rgb(126, 7, 7);
+}
+h3{
+    color: white;
+}
+p{
+    color: white;
+}
+.artistas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+.img-art{
+    border-radius: 50%;
+}
+.art{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+.sencillos article{
+    width: 45%;
+    background-color:#B91D1D;
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius: 10%;
+    font-size: 13px;
+    justify-content: space-between;
+}
 
 /*GENERO.HTML*/
 .lista_generos{
@@ -182,6 +286,135 @@ body{
     text-decoration:underline;
     font-size: 10px;
 }
+/*detalle-artistas*/
+.imagenfondo{
+    background-image: url(../images/justin-bieber-justice.jpeg);
+    padding: 20px;
+}
+.margen{
+    padding: 10px;
+}
+.centrado{
+    text-align: center;
+}
+.topcanciones{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 10px;
+}
+.justinimage{
+    width:20%
+}
+
+.justinimage img{
+    width: 100%;
+    border-radius: 10px;
+}
+article .numero{
+    padding: 10px 30px;
+    font-weight: bold
+}
+.numero{
+    color: white;
+}
+.texto a{
+    color: white;
+    text-decoration: none;
+}
+.texto .negrita{
+    font-weight: normal;
+}
+.texto .chico{
+    font-size: small;
+    color: #A7A7A7 ;
+}
+/*detalle disco */
+.primera_seccion{
+    /*  padding: 
+      margin: */
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+  }
+  .primera_seccion .imagen{
+      width: 50%;
+      padding: 50px 10px 10px 30px;
+  }
+  .primera_seccion img{
+      width: 100%;
+      border-radius: 10px;
+  }
+  .primera_seccion article{
+      color: #A7A7A7;
+      padding: 35px;
+      width: 40%;
+      font-size:medium;
+  }
+  .white{
+      color: white;
+  }
+  article a{
+      color:#A7A7A7;
+      text-decoration: none;
+  }
+  
+  .segunda_seccion{
+      color: #A7A7A7;
+  }
+  .segunda_seccion a{
+      color:white
+  }
+  .segunda_seccion article{
+      padding: 1px 20px;
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: flex-start;
+  }
+  .segunda_seccion .player{
+      padding: 30px 45px 30px 50px;
+      font-size:xx-large;
+  
+  }
+  
+  .segunda_seccion .texto{
+      padding: 0px 50px;
+      font-size: medium;
+  }
+  .table{
+      display: none;
+  }
+  /* detalle cancion */
+  /*section{
+    
+    
+    
+}*/
+.blanco{
+    color:white;
+}
+.texto{
+    text-align: center;
+}
+.texto a{
+    color: #646464;
+    text-decoration: none;
+}
+.mobile{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+.foto_mobile{
+    width: 420px  
+
+}
+.desktop {
+    display: none;
+}
 /*ESTILO DESKTOP*/
 @media (min-width: 1024px) {
     /*header*/
@@ -240,7 +473,20 @@ body{
 .ion-social-instagram{
     font-size: 30px;
 }
-
+/*HOME.HTML*/
+.sencillos{
+    justify-content: space-around;
+ }
+  .artistas{
+    justify-content: space-around;
+}
+  .artistas article{
+    width: 30%;
+}
+  .album{
+    width: 30%;
+    justify-content: space-around;
+}
 /*GENERO.HTML*/
 .lista_generos{
     align-items: center;
@@ -271,5 +517,102 @@ body{
 }
 .boton{
     font-size: 16px;
+}
+/* detalle artista*/
+div.imagenfondo{
+    background-size: cover;
+}
+h1.numero.centrado{
+    font-size: 70px;
+}
+.numero.margen{
+    padding-left: 40px;
+    font-size: xx-large;
+}
+section{
+    padding-left: 20px;
+}
+.justinimage{
+    width: 10%;
+}
+.topcanciones{
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: #A7A7A7;
+}
+.topcanciones .numero{
+    padding-top: 15px;
+    font-size: large;
+}
+.texto{
+    width: 60%;
+    padding-left: 40px;
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+/* detalle disco*/
+
+.primera_seccion .imagen{
+    width: 30%;
+}
+.primera_seccion .justin{   
+    width: 100%;
+}
+.primera_seccion article{
+    padding: 50px;
+}
+.segunda_seccion {
+    display: none;
+}
+.table {
+    display: table;
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+}
+table {
+    width: 100%;
+    padding: 10px 0px;
+}
+.table .player{
+    font-size: large;
+}
+.table a{
+    color: #fff;;
+    text-decoration: none;
+}
+.transparente{
+    color:rgb(6, 13, 20)
+}
+.table tr{
+    padding: 15px;
+    border-bottom: solid 1px #A7A7A7;
+    line-height: 1.7;
+}
+/* detalle cancion */
+
+.texto{
+    background-color: #B91D1D;
+    padding: 2px;
+    margin: 40px 200px;
+    font-size: large;
+}
+.desktop{
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.foto_desktop{
+    width: 1240px;
+    
+}
+.mobile{
+    display: none;
+
 }
 }
