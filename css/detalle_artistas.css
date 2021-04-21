@@ -48,3 +48,42 @@ article .numero{
     font-size: small;
     color: #A7A7A7 ;
 }
+
+@media (min-width: 1024px){
+    div.imagenfondo{
+        background-size: cover;
+    }
+    h1.numero.centrado{
+        font-size: 70px;
+    }
+    .numero.margen{
+        padding-left: 40px;
+        font-size: xx-large;
+    }
+    section{
+        padding-left: 20px;
+    }
+    .justinimage{
+        width: 10%;
+    }
+    .topcanciones{
+        border-bottom-style: solid;
+        border-bottom-width: 1px;
+        border-bottom-color: #A7A7A7;
+    }
+    .topcanciones .numero{
+        padding-top: 15px;
+        font-size: large;
+    }
+    .texto{
+        width: 60%;
+        padding-left: 40px;
+        padding-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+} 
+
