@@ -181,7 +181,7 @@ body{
  
   /* termina carousel*/
 
-h2{
+.titulos-home{
     text-align: center;
     background-color:rgb(126, 7, 7);
 }
@@ -208,7 +208,7 @@ p{
 img{
     width: 100%;
 }
-article{
+.sencillos article{
     width: 45%;
     background-color:#B91D1D;
     text-align: center;
@@ -388,6 +388,34 @@ article .numero{
   .table{
       display: none;
   }
+  /* detalle cancion */
+  /*section{
+    
+    
+    
+}*/
+.blanco{
+    color:white;
+}
+.texto{
+    text-align: center;
+}
+.texto a{
+    color: #646464;
+    text-decoration: none;
+}
+.mobile{
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+}
+.foto_mobile{
+    width: 420px  
+
+}
+.desktop {
+    display: none;
+}
 /*ESTILO DESKTOP*/
 @media (min-width: 1024px) {
     /*header*/
@@ -528,9 +556,7 @@ section{
 
 }
 /* detalle disco*/
-body{
-    margin: 0px 0px 0px 70px;
-}
+
 .primera_seccion .imagen{
     width: 30%;
 }
@@ -567,5 +593,27 @@ table {
     padding: 15px;
     border-bottom: solid 1px #A7A7A7;
     line-height: 1.7;
+}
+/* detalle cancion */
+
+.texto{
+    background-color: #B91D1D;
+    padding: 2px;
+    margin: 40px 200px;
+    font-size: large;
+}
+.desktop{
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.foto_desktop{
+    width: 1240px;
+    
+}
+.mobile{
+    display: none;
+
 }
 }
