@@ -14,8 +14,11 @@ body{
     color:white;
 }
 .texto{
-    color: #646464;
     text-align: center;
+}
+.texto a{
+    color: #646464;
+    text-decoration: none;
 }
 .mobile{
     width: 100%;

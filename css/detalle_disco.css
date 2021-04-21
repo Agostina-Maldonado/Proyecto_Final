@@ -92,7 +92,7 @@ article a{
         font-size: large;
     }
     .table a{
-        color:#A7A7A7;
+        color: #fff;;
         text-decoration: none;
     }
     .transparente{
@@ -103,6 +103,5 @@ article a{
         border-bottom: solid 1px #A7A7A7;
         line-height: 1.7;
     }
-    /* Rectangle 12 */
 
 }
