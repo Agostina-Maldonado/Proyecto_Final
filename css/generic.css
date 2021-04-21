@@ -257,20 +257,19 @@ body{
 .lista_artistas {
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
 }
-.card_artista{
+.imagen_y_texto{
     width: 40%;
-    
 }
-
 .img_artista{
     border-radius: 50%;
-    width: 30px;
+    width: 100px;
 }
 .card-nombre_artista h3{
-    font-size: 20px;
+    font-size: 25px;
 }
 .boton{
-    font-size: 15px;
+    font-size: 16px;
 }
 }
