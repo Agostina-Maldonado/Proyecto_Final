@@ -185,13 +185,11 @@ body{
     text-align: center;
     background-color:rgb(126, 7, 7);
 }
-h3{
+.sencillos h3,p {
     color: white;
 }
-p{
-    color: white;
-}
-.artistas{
+
+.sencillos{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -209,7 +207,7 @@ img{
     width: 100%;
 }
 .sencillos article{
-    width: 45%;
+    width: 100%;
     background-color:#B91D1D;
     text-align: center;
     margin-bottom: 25px;
@@ -415,6 +413,37 @@ article .numero{
 .desktop {
     display: none;
 }
+/* search results */
+h2{
+    color: white;
+    font-size: 20px;
+}
+.search-artist{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-between;
+}
+.search-artist article{
+    width: 40%;
+}
+img{
+    width: 100%;
+}
+article{
+    width: 100%;
+}
+
+.player{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+}
+i{
+    color: white;
+}
 /*ESTILO DESKTOP*/
 @media (min-width: 1024px) {
     /*header*/
@@ -477,13 +506,7 @@ article .numero{
 .sencillos{
     justify-content: space-around;
  }
-  .artistas{
-    justify-content: space-around;
-}
-  .artistas article{
-    width: 30%;
-}
-  .album{
+  .sencillos article{
     width: 30%;
     justify-content: space-around;
 }
@@ -613,6 +636,20 @@ table {
 }
 .mobile{
     display: none;
+
+}
+/* search results */
+.search-album{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.search-album article{
+    width: 40%;
+}
+.img-art{
+    width: 500px;
 
 }
 }

@@ -6,8 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Music Boom </title>
     <link rel="stylesheet" href="./css/generic.css">
-    <link rel="stylesheet" href="./css/search-results.css">
-    <link rel="stylesheet" href="./css/detalle_disco.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,23 +14,21 @@
 </head>
 <body>
     <div class="container">
-		<!-- header -->
+        <!-- header -->
 		<header class="main-header">
             <nav class="main-nav">
                 <ul class="bar-ul">
-                     <li><img src="images/logo.jpg" class="logo-header"> </li>
+                     <li class="nav-element"><img src="images/logo.jpg" class="logo-header"> </li>
                      <li class="nav-element"><a href="home.html">Home</a></li>
                      <li class="nav-element"><a href="playlist.html">Playlist</a></li>
                      <li class="nav-element"><a href="genero.html">Género</a></li>
+					 <li class="search"> 
+						 <form action="search-results.html" method="GET">
+                        	<input type="text" class='barra-buscador' name="Buscar" value="" placeholder="Buscar">
+                       		<button class="boton_search"><i class="fas fa-search"></i></button>
+						</form>
+					</li>
                 </ul>
-                <div class="search">
-                    <form action="results.html" method="GET">
-                        <input type="text" class='nav-element'name="Buscar" value="" placeholder="Buscar">
-                        <a href="./search-results.html">
-                            <button class="nav-element"> Buscar</button>
-                        </a>
-                    </form>
-                </div>
             </nav>
 		</header>
         <h2>Artistas</h2>
@@ -187,12 +183,11 @@
                   </tr>
               </table>
         </section>
-
-         <!-- footer -->
+        <!-- footer -->
 		<footer class="main-footer">
-            <p class="rights">© 2021 Music Boom. All rights reserved.</p>
-			<ul>
-            <img src="images/logo.jpg" class="logo-img"></li>
+            <img src="images/logo.jpg" alt="Logotipo Music Boom" class="logo-footer">
+            <p class="derechos">© 2021 Music Boom. All rights reserved.</p>
+			<ul class="icons-redes">
 				<li><a href="#"><span class="ion-social-facebook"><ion-icon name="logo-facebook"></ion-icon></span></a></li>
 				<li><a href="#"><span class="ion-social-instagram"><ion-icon name="logo-instagram"></ion-icon></span></a></li>
 				<li><a href="#"><span class="ion-social-linkedin"><ion-icon name="logo-linkedin"></ion-icon></span></a></li>
