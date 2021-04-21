@@ -5,11 +5,14 @@ body{
     background-color: rgb(6, 13, 20);
     
 }
-/*section{
-    
-    
-    
-}*/
+section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px;
+}
 .blanco{
     color:white;
 }
@@ -37,9 +40,10 @@ body{
         background-size: 1024px;
      }
     .texto{
-        background-color: #B91D1D;
-        padding: 2px;
-        margin: 40px 200px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
         font-size: large;
     }
     .desktop{
