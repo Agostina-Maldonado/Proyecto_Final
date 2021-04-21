@@ -4,15 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/detalle_cancion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/generic.css">
     <title>detalle_cancion</title>
 </head>
 <body>
-    <section class="texto">
+    <!-- header -->
+		<header class="main-header">
+            <nav class="main-nav">
+                <ul class="bar-ul">
+                     <li class="nav-element"><img src="images/logo.jpg" class="logo-header"> </li>
+                     <li class="nav-element"><a href="home.html">Home</a></li>
+                     <li class="nav-element"><a href="playlist.html">Playlist</a></li>
+                     <li class="nav-element"><a href="genero.html">Género</a></li>
+					 <li class="search"> 
+						 <form action="search-results.html" method="GET">
+                        	<input type="text" class='barra-buscador' name="Buscar" value="" placeholder="Buscar">
+                       		<button class="boton_search"><i class="fas fa-search"></i></button>
+						</form>
+					</li>
+                </ul>
+            </nav>
+		</header>
+    <section class="texto_cancion">
         <h2 class="blanco">Peaches</h2>
-        <p class="texto"><a href="detalle_artistas.html">Justin Bieber</a></p>
-        <p class="texto"><a href="detalle_disco.html">Justice</a></p>
+        <p class="texto_cancion"><a href="detalle_artistas.html">Justin Bieber</a></p>
+        <p class="texto_cancion"><a href="detalle_disco.html">Justice</a></p>
     </section>
     <section class="mobile">
         <img class="foto_mobile" src="images/player_mobile.PNG" alt="player">
@@ -20,6 +37,16 @@
     <section class="desktop">
         <img class="foto_desktop" src="images/player img.PNG" alt="player">
     </section>
-    
+    <!-- footer -->
+		<footer class="main-footer">
+            <img src="images/logo.jpg" alt="Logotipo Music Boom" class="logo-footer">
+            <p class="derechos">© 2021 Music Boom. All rights reserved.</p>
+			<ul class="icons-redes">
+				<li><a href="#"><span class="ion-social-facebook"><ion-icon name="logo-facebook"></ion-icon></span></a></li>
+				<li><a href="#"><span class="ion-social-instagram"><ion-icon name="logo-instagram"></ion-icon></span></a></li>
+				<li><a href="#"><span class="ion-social-linkedin"><ion-icon name="logo-linkedin"></ion-icon></span></a></li>
+			</ul>
+            <p class="nombres_developers">Por Agostina Maldonado, Candela Sapoznik y Matías Maldonado</p>
+		</footer>
 </body>
 </html>

@@ -388,29 +388,30 @@ article .numero{
       display: none;
   }
   /* detalle cancion */
-  /*section{
-    
-    
-    
-}*/
+section{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+}
 .blanco{
     color:white;
 }
-.texto{
+.texto_cancion{
     text-align: center;
 }
-.texto a{
+.texto_cancion a{
     color: #646464;
     text-decoration: none;
 }
-.mobile{
+.mobile .foto_mobile{
     width: 100%;
-    position: fixed;
     bottom: 0px;
 }
 .foto_mobile{
-    width: 420px  
-
+    width: 420px;
+    position: fixed;
 }
 .desktop {
     display: none;
@@ -529,7 +530,7 @@ h1.numero.centrado{
     padding-left: 40px;
     font-size: xx-large;
 }
-section{
+.detalle_artista{
     padding-left: 20px;
 }
 .justinimage{
@@ -544,7 +545,7 @@ section{
     padding-top: 15px;
     font-size: large;
 }
-.texto{
+div.texto{
     width: 60%;
     padding-left: 40px;
     padding-top: 20px;
@@ -595,20 +596,20 @@ table {
 }
 /* detalle cancion */
 
-.texto{
+.texto_cancion{
     background-color: #B91D1D;
     padding: 2px;
-    margin: 40px 200px;
     font-size: large;
 }
 .desktop{
     display: block;
     position: fixed;
-    bottom: 0px;
-    width: 100%;
+    /*bottom: 0px;
+    width: 100%;*/
 }
 .foto_desktop{
     width: 1240px;
+    /*position: fixed;*/
     
 }
 .mobile{
