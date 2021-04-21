@@ -137,7 +137,7 @@ body{
 }
 
 /*DETALLEGENERO.HTML*/
-.lista_artistas {
+.lista_artistas{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -157,7 +157,7 @@ body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
 .img_artista{
@@ -172,7 +172,6 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-
 }
 .card-nombre_artista h3{
     font-size: 14px;
@@ -257,10 +256,11 @@ body{
 /*DETALLE_GENERO.HTML*/
 .lista_artistas {
     justify-content: space-between;
-    align-items: none;
+    align-items: center;
 }
 .card_artista{
     width: 40%;
+    
 }
 
 .img_artista{
