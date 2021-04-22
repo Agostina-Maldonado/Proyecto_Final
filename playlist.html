@@ -6,24 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/generic.css">
-    <link rel="stylesheet" href="css/playlist.css">
     <title>playlist</title>
 </head>
 <body>
-    <main class="white">
+    <!-- header -->
+		<header class="main-header">
+            <nav class="main-nav">
+                <ul class="bar-ul">
+                     <li class="nav-element"><img src="images/logo.jpg" class="logo-header"> </li>
+                     <li class="nav-element"><a href="home.html">Home</a></li>
+                     <li class="nav-element"><a href="playlist.html">Playlist</a></li>
+                     <li class="nav-element"><a href="genero.html">Género</a></li>
+					 <li class="search"> 
+						 <form action="search-results.html" method="GET">
+                        	<input type="text" class='barra-buscador' name="Buscar" value="" placeholder="Buscar">
+                       		<button class="boton_search"><i class="fas fa-search"></i></button>
+						</form>
+					</li>
+                </ul>
+            </nav>
+		</header>
+    <section class="white">
         <div class="player">
             <i class="fas fa-heart"></i>
         </div>
         <h2>Favoritos</h1>
         <h3>1158 songs</h3>
-    </main>
-    <main class="white desktop">
+    </section>
+    <section class="white desktop">
         <div class="player">
             <i class="fas fa-heart"></i>
             <p>Favoritos<p>
         </div>
         <p class="reproducciones">1158 songs<p>
-    </main>
+    </section>
     <section class="segunda_seccion">
         <article>
             <div class="player">
@@ -189,6 +205,17 @@
               </tr>
           </table>
     </section>
+    <!-- footer -->
+		<footer class="main-footer">
+            <img src="images/logo.jpg" alt="Logotipo Music Boom" class="logo-footer">
+            <p class="derechos">© 2021 Music Boom. All rights reserved.</p>
+			<ul class="icons-redes">
+				<li><a href="#"><span class="ion-social-facebook"><ion-icon name="logo-facebook"></ion-icon></span></a></li>
+				<li><a href="#"><span class="ion-social-instagram"><ion-icon name="logo-instagram"></ion-icon></span></a></li>
+				<li><a href="#"><span class="ion-social-linkedin"><ion-icon name="logo-linkedin"></ion-icon></span></a></li>
+			</ul>
+            <p class="nombres_developers">Por Agostina Maldonado, Candela Sapoznik y Matías Maldonado</p>
+		</footer>
 </body>
 </html>
 </body>

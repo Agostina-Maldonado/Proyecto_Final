@@ -16,10 +16,10 @@ section{
 .blanco{
     color:white;
 }
-.texto{
+.texto_cancion{
     text-align: center;
 }
-.texto a{
+.texto_cancion a{
     color: #646464;
     text-decoration: none;
 }

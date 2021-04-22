@@ -284,23 +284,30 @@ img{
     text-decoration:underline;
     font-size: 10px;
 }
+
+
 /*detalle-artistas*/
+
 .imagenfondo{
     background-image: url(../images/justin-bieber-justice.jpeg);
     padding: 20px;
 }
+
 .margen{
     padding: 10px;
 }
+
 .centrado{
     text-align: center;
 }
+
 .topcanciones{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     padding: 10px;
 }
+
 .justinimage{
     width:20%
 }
@@ -309,83 +316,82 @@ img{
     width: 100%;
     border-radius: 10px;
 }
+
 article .numero{
     padding: 10px 30px;
     font-weight: bold
 }
+
 .numero{
     color: white;
 }
-.texto a{
-    color: white;
-    text-decoration: none;
-}
-.texto .negrita{
-    font-weight: normal;
-}
+
 .texto .chico{
     font-size: small;
     color: #A7A7A7 ;
 }
-/*detalle disco */
+
+
+/*detalle disco*/
+
 .primera_seccion{
-    /*  padding: 
-      margin: */
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-  }
-  .primera_seccion .imagen{
-      width: 50%;
-      padding: 50px 10px 10px 30px;
-  }
-  .primera_seccion img{
-      width: 100%;
-      border-radius: 10px;
-  }
-  .primera_seccion article{
-      color: #A7A7A7;
-      padding: 35px;
-      width: 40%;
-      font-size:medium;
-  }
-  .white{
-      color: white;
-  }
-  article a{
-      color:#A7A7A7;
-      text-decoration: none;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.primera_seccion .imagen{
+    width: 50%;
+    padding: 50px 10px 10px 30px;
+} 
+.primera_seccion img{
+    width: 100%;
+    border-radius: 10px;
+} 
+.primera_seccion article{
+    color: #A7A7A7;
+    padding: 40px 20px;
+    width: 40%;
+    font-size:smaller;
+} 
+.white{
+    color: white;
+} 
+.article_disco a{
+    color:#A7A7A7;
+    text-decoration: none;
+}
+
+.segunda_seccion{
+    color: #A7A7A7;
+}
+.segunda_seccion a{
+    color:white
+}
+.segunda_seccion article{
+    padding: 1px 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.segunda_seccion .player{
+    padding: 30px 45px 30px 50px;
+    font-size:xx-large;
   
-  .segunda_seccion{
-      color: #A7A7A7;
-  }
-  .segunda_seccion a{
-      color:white
-  }
-  .segunda_seccion article{
-      padding: 1px 20px;
-      border-bottom-style: solid;
-      border-bottom-width: 1px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      justify-content: flex-start;
-  }
-  .segunda_seccion .player{
-      padding: 30px 45px 30px 50px;
-      font-size:xx-large;
+}
   
-  }
-  
-  .segunda_seccion .texto{
-      padding: 0px 50px;
-      font-size: medium;
-  }
-  .table{
-      display: none;
-  }
-  /* detalle cancion */
+.segunda_seccion .texto_disco{
+    padding: 0px 50px;
+    font-size: medium;
+}
+.table{
+    display: none;
+} */
+
+
+  /* detalle cancion 
 section{
         display: flex;
         flex-wrap: wrap;
@@ -413,7 +419,9 @@ section{
 }
 .desktop {
     display: none;
-}
+} */
+
+
 /* search results */
 h2{
     color: white;
@@ -542,7 +550,7 @@ i{
 .boton{
     font-size: 16px;
 }
-/* detalle artista*/
+/* detalle artista
 div.imagenfondo{
     background-size: cover;
 }
@@ -577,8 +585,8 @@ div.texto{
     flex-direction: row;
     justify-content: space-between;
 
-}
-/* detalle disco*/
+} */
+/* detalle disco
 
 .primera_seccion .imagen{
     width: 30%;
@@ -616,9 +624,9 @@ table {
     padding: 15px;
     border-bottom: solid 1px #A7A7A7;
     line-height: 1.7;
-}
+} */
 /* detalle cancion */
-
+/*
 .texto_cancion{
     background-color: #B91D1D;
     padding: 2px;
@@ -627,18 +635,19 @@ table {
 .desktop{
     display: block;
     position: fixed;
-    /*bottom: 0px;
-    width: 100%;*/
+    bottom: 0px;
+    width: 100%;
 }
 .foto_desktop{
     width: 1240px;
-    /*position: fixed;*/
+    position: fixed;
     
 }
 .mobile{
     display: none;
-
 }
+*/
+
 /* search results */
 .search-album{
     display: flex;
