@@ -585,7 +585,8 @@ i{
 .boton{
     font-size: 16px;
 }
-/* detalle artista
+
+ /*detalle artista*/
 div.imagenfondo{
     background-size: cover;
 }
@@ -619,10 +620,9 @@ div.texto{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
+} 
 
-} */
-/* detalle disco
-
+/* detalle disco */
 .primera_seccion .imagen{
     width: 30%;
 }
@@ -631,8 +631,80 @@ div.texto{
 }
 .primera_seccion article{
     padding: 50px;
+    font-size: x-large;
+}
+.white{
+    font-size: x-large;
 }
 .segunda_seccion {
+    display: none;
+}
+.table {
+    display: table;
+    width: 90%;
+    text-align: left;
+    margin: 0 auto;
+    font-size: large;
+}
+table {
+    width: 100%;
+    padding: 10px 0px;
+}
+.table .player{
+    font-size: x-large;
+    padding-top: 15px;
+    padding-left: 10px;
+}
+.table a{
+    color: #fff;;
+    text-decoration: none;
+}
+.transparente{
+    color:rgb(6, 13, 20)
+} 
+.table tr{
+    padding: 15px;
+} 
+tr{
+    line-height: 3;
+}
+
+/* detalle cancion */  
+.fondo{
+    background-size: cover;
+}
+.fondo_negro{
+    font-size: 40px;
+}
+.mobile{
+    display: none;
+}
+.desktop{
+    display: block;
+    bottom: 0px;
+    width: 100%;
+}
+
+/* playlist */
+.white_mobile{
+    display: none;
+} 
+.white_desktop{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    background-color: #A56FFF;
+} 
+.white_desktop.player{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around; 
+} 
+}  
+.segunda_seccion{
     display: none;
 }
 .table {
@@ -643,45 +715,23 @@ div.texto{
 }
 table {
     width: 100%;
-    padding: 10px 0px;
+    padding: 5px 0px;
+    font-size: 20px;
 }
 .table .player{
     font-size: large;
 }
 .table a{
-    color: #fff;;
+    color:rgb(241, 229, 229);
     text-decoration: none;
 }
 .transparente{
     color:rgb(6, 13, 20)
 }
 .table tr{
-    padding: 15px;
-    border-bottom: solid 1px #A7A7A7;
-    line-height: 1.7;
-} */
-/* detalle cancion */
-/*
-.texto_cancion{
-    background-color: #B91D1D;
-    padding: 2px;
-    font-size: large;
+    line-height: 0px;
 }
-.desktop{
-    display: block;
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-}
-.foto_desktop{
-    width: 1240px;
-    position: fixed;
-    
-}
-.mobile{
-    display: none;
-}
-*/
+
 
 /* search results */
 .search-album{
