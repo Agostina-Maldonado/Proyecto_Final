@@ -488,6 +488,10 @@ article{
 i{
     color: white;
 }
+/* search */
+.leyenda{
+    display: none;
+}
 /*ESTILO DESKTOP*/
 @media (min-width: 1024px) {
     /*header*/
