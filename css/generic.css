@@ -722,5 +722,8 @@ p.reproducciones{
 }
 .table {
     display: table; 
-} 
+}
+.segunda_seccion{
+    display: none;
+}
 }
