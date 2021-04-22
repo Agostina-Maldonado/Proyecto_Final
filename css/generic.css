@@ -292,40 +292,32 @@ img{
     background-image: url(../images/justin-bieber-justice.jpeg);
     padding: 20px;
 }
-
 .margen{
     padding: 10px;
 }
-
 .centrado{
     text-align: center;
 }
-
 .topcanciones{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     padding: 10px;
 }
-
 .justinimage{
     width:20%
 }
-
 .justinimage img{
     width: 100%;
     border-radius: 10px;
 }
-
 article .numero{
     padding: 10px 30px;
     font-weight: bold
 }
-
 .numero{
     color: white;
 }
-
 .texto .chico{
     font-size: small;
     color: #A7A7A7 ;
@@ -378,48 +370,82 @@ article .numero{
 }
 .segunda_seccion .player{
     padding: 30px 45px 30px 50px;
-    font-size:xx-large;
-  
-}
-  
+    font-size:xx-large; 
+} 
 .segunda_seccion .texto_disco{
     padding: 0px 50px;
     font-size: medium;
 }
 .table{
     display: none;
-} */
+} 
 
-
-  /* detalle cancion 
-section{
+  /* detalle cancion */
+  
+.texto_cancion{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         justify-content: center;
 }
-.blanco{
-    color:white;
-}
-.texto_cancion{
-    text-align: center;
-}
-.texto_cancion a{
-    color: #646464;
-    text-decoration: none;
-}
-.mobile .foto_mobile{
-    width: 100%;
-    bottom: 0px;
-}
-.foto_mobile{
-    width: 420px;
-    position: fixed;
-}
 .desktop {
     display: none;
-} */
+} 
+
+/*  playlist */
+
+.white{
+    color: white;
+    background-color: #A56FFF;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.white .player{
+    font-size:xx-large;
+    padding: 20px;
+}
+.white h2{
+    padding-top: 10px;
+}
+.white h3{
+    padding-top: 10px;
+    font-weight:lighter;
+}
+.white.desktop{
+    display: none;
+}
+.segunda_seccion{
+    color: #A7A7A7;
+    margin-top: 10px;
+}
+.segunda_seccion a{
+    color:white
+}
+.segunda_seccion article{
+    padding: 1px 20px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.segunda_seccion .player{
+    padding: 30px 20px 30px 25px;
+    font-size:x-large;
+}
+
+.segunda_seccion .texto{
+    padding: 0px 50px;
+    font-size: medium;
+}
+
+.table{
+    display: none;
+}
 
 
 /* search results */
