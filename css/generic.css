@@ -724,18 +724,3 @@ p.reproducciones{
     display: table; 
 } 
 
-
-/* search results */
-.search-album{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-}
-.search-album article{
-    width: 40%;
-}
-.img-art{
-    width: 500px;
-}
-}
