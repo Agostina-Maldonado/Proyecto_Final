@@ -381,21 +381,30 @@ article .numero{
 } 
 
   /* detalle cancion */
-  
-.texto_cancion{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+.fondo{
+    background-image: url(../images/peaches.jpg);
+    background-size: 400px 300px;
+    background-repeat:no-repeat ;
+    background-position: top;
 }
+.fondo_negro{
+    background-color: black;
+}
+.texto_cancion{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 .desktop {
     display: none;
 } 
 
 /*  playlist */
 
-.white{
+.white_mobile{
     color: white;
     background-color: #A56FFF;
     display: flex;
@@ -403,14 +412,14 @@ article .numero{
     flex-direction: row;
     justify-content: space-around;
 }
-.white .player{
+.white_mobile .player{
     font-size:xx-large;
     padding: 20px;
 }
-.white h2{
+.white_mobile h2{
     padding-top: 10px;
 }
-.white h3{
+.white_mobile h3{
     padding-top: 10px;
     font-weight:lighter;
 }
@@ -420,7 +429,7 @@ article .numero{
 .segunda_seccion{
     color: #A7A7A7;
     margin-top: 10px;
-}
+} 
 .segunda_seccion a{
     color:white
 }
