@@ -81,7 +81,6 @@ body{
  }
 .logo-footer{
     width: 50%;
-    height:auto;
 }
 .derechos{
     font-size: 10px;
@@ -116,7 +115,6 @@ body{
 }
 /* HOME.HTML*/
 /* Carousel de w3schools*/
-
 .slideshow-container {
     width: 100%;
     position: relative;
@@ -185,6 +183,7 @@ body{
 .titulos-home{
     text-align: center;
     background-color:rgb(126, 7, 7);
+    font-size: 25px;
 }
 .sencillos h3,p {
     color: white;
@@ -224,7 +223,6 @@ img{
     flex-wrap: wrap;
     font-size: auto;
     justify-content: center;
-    padding: 4%;
 }
 .card-genero{
     width: 80%;
@@ -233,10 +231,10 @@ img{
     margin-bottom: 4%;
     border-radius: 10%;
     font-size: 13px;
-    font-weight:lighter;
 }
-.boton-explorar{
-    font-size: 8px;
+.boton_explorar{
+    font-size: 12px;
+    text-decoration: underline;
 }
 
 /*DETALLEGENERO.HTML*/
@@ -246,15 +244,7 @@ img{
     flex-wrap: wrap;
     align-items: center;
 }
-.card-artista{
-    width: 100%;
-    text-align: center;
-    margin: 2%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+
 .imagen_y_texto{
     width: 100%;
     display: flex;
@@ -282,19 +272,17 @@ img{
     margin-right: 10px;
 }
 .boton{
-    text-decoration:underline;
+    text-decoration: underline;
     font-size: 10px;
 }
-
 
 /*detalle-artistas*/
 
 .imagenfondo{
     background-image: url(../images/justin-bieber-justice.jpeg);
     padding: 20px;
-}
-.margen{
-    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .centrado{
     text-align: center;
@@ -323,7 +311,6 @@ article .numero{
     font-size: small;
     color: #A7A7A7 ;
 }
-
 
 /*detalle disco*/
 
@@ -569,7 +556,7 @@ i{
     font-size: 20px;
 }
 .boton_explorar{
-    font-size: 20px;
+    font-size: 12px;
 }
 /*DETALLE_GENERO.HTML*/
 .lista_artistas {
