@@ -39,25 +39,23 @@ function showSlides(n) {
 
 let url= 'https://api.deezer.com/chart/0';
 fetch (url)
-.then(function(response){
-    return response.json()
-})
-.then(function(data){
-    let sencillos= document.querySelector('.sencillos');
-    let infoCanciones= data.tracks.data;
-    let contenidoSencillos= ''
-    for (let i=0;i<infoCanciones.length;i++){
-        contenidoSencillos= '<article class="info">
-        <img src= "${infoCanciones[i].picture_medium}">
-         '<h2><a href="detalle_cancion.html">${infoCanciones[i].tittle}</a></h2>' 
-         '<p><a href="detalle_artistas.html">${infoCanciones[i].artist.name}</a></p>' 
-
-        sencillos.innerHTML += contenidoSencillos
-    }
-})
-.catch(function(error){
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(data){
+        let sencillos= document.querySelector('.sencillos');
+        let infoCanciones= data.tracks.data;
+        let contenidoSencillos= ''
+        for (let i=0;i<infoCanciones.length;i++){
+            contenidoSencillos= `<article class="info">
+            <img src= "${infoCanciones[i].picture_medium}">
+            <h2><a href="detalle_cancion.html">${infoCanciones[i].tittle}</a></h2> 
+            <p><a href="detalle_artistas.html">${infoCanciones[i].artist.name}</a></p> </article>`
+        }sencillos.innerHTML += contenidoSencillos;
+    })
+    .catch(function(error){
     console.log(error);
-})
+    })
 
 let artistas= 'https://api.deezer.com/chart/0/artists';
 fetch(artistas)
@@ -65,15 +63,14 @@ fetch(artistas)
     return response.json()
     })
     .then(function(data){
-        let artistasDestacados= document.querySelector('.sencillos');
+        let artistasDestacados= document.querySelector('.artistas');
         let infoArtistas= data;
         let contenidoArtistas= ''
         for (let i=0;i<infoArtistas.length;i++){
-            contenidoSencillos= '<article class="info">
+            contenidoSencillos= `<article class="info">
             <img src= "${infoArtistas[i].picture_medium}">
-            '<h2><a href="detalle_artistas.html">${infoArtistas[i].tittle}</a></h2>' 
-        artistasDestacados.innerHTML += contenidoArtistas
-        }
+            <h2><a href="detalle_artistas.html">${infoArtistas[i].tittle}</a></h2></article>`
+        } artistasDestacados.innerHTML += contenidoArtistas;
     })
     .catch(function(error){
         console.log(error);
@@ -86,16 +83,16 @@ fetch(albumes)
         return response.json()
     })
     .then(function(data){
-        let albumesDestacados= document.querySelector('.sencillos');
+        let albumesDestacados= document.querySelector('.albumes');
         let infoAlbumes= data;
         let contenidoAlbumes= ''
         for (let i=0;i<infoAlbumes.length;i++){
-            contenidoSencillos= '<article class="info">
+            contenidoSencillos= `<article class="info">
             <img src= "${infoArtistas[i].cover_medium}">
-            '<h2><a href="detalle_disco.html">${infoAlbumes[i].tittle}</a></h2>'
-            '<p><a href="detalle_artistas.html">${infoAlbumes[i].artist.name}</a></p>'
-            albumesDestacados.innerHTML += contenidoAlbumes
-        }
+            <h2><a href="detalle_disco.html">${infoAlbumes[i].tittle}</a></h2>
+            <p><a href="detalle_artistas.html">${infoAlbumes[i].artist.name}</a></p>
+            </article>`
+        } albumesDestacados.innerHTML += contenidoAlbumes;
     })
     .catch(function(error){
         console.log(error);
