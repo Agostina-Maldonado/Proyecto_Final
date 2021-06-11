@@ -37,7 +37,7 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-let url= 'https://api.deezer.com/chart/0';
+let url= 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0';
 fetch (url)
     .then(function(response){
         return response.json()
@@ -57,7 +57,7 @@ fetch (url)
     console.log(error);
     })
 
-let artistas= 'https://api.deezer.com/chart/0/artists';
+let artistas= 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists';
 fetch(artistas)
     .then(function(response){
     return response.json()
@@ -77,7 +77,7 @@ fetch(artistas)
     })
 
 
-let albumes= 'https://api.deezer.com/chart/0/albums';
+let albumes= 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums';
 fetch(albumes)
     .then(function(response){
         return response.json()
