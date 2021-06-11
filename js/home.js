@@ -47,10 +47,10 @@ fetch (url)
         let infoCanciones= data.tracks.data;
         let contenidoSencillos= ''
         for (let i=0;i<infoCanciones.length;i++){
-            contenidoSencillos= `<article class="info">
+            contenidoSencillos += `<article class="info">
             <img src= "${infoCanciones[i].picture_medium}">
-            <h2><a href="detalle_cancion.html">${infoCanciones[i].tittle}</a></h2> 
-            <p><a href="detalle_artistas.html">${infoCanciones[i].artist.name}</a></p> </article>`
+            <h2><a href="detalle_cancion.html?id=${infoCanciones[i].id}">${infoCanciones[i].tittle}</a></h2> 
+            <p><a href="detalle_artistas.html?id=${infoCanciones[i].id}">${infoCanciones[i].artist.name}</a></p> </article>`
         }sencillos.innerHTML += contenidoSencillos;
     })
     .catch(function(error){
@@ -64,12 +64,12 @@ fetch(artistas)
     })
     .then(function(data){
         let artistasDestacados= document.querySelector('.artistas');
-        let infoArtistas= data;
+        let infoArtistas= data.data;
         let contenidoArtistas= ''
         for (let i=0;i<infoArtistas.length;i++){
-            contenidoSencillos= `<article class="info">
+            contenidoSencillos += `<article class="info">
             <img src= "${infoArtistas[i].picture_medium}">
-            <h2><a href="detalle_artistas.html">${infoArtistas[i].tittle}</a></h2></article>`
+            <h2><a href="detalle_artistas.html?id=${infoArtistas[i].id}">${infoArtistas[i].name}</a></h2></article>`
         } artistasDestacados.innerHTML += contenidoArtistas;
     })
     .catch(function(error){
@@ -84,13 +84,13 @@ fetch(albumes)
     })
     .then(function(data){
         let albumesDestacados= document.querySelector('.albumes');
-        let infoAlbumes= data;
+        let infoAlbumes= data.data;
         let contenidoAlbumes= ''
         for (let i=0;i<infoAlbumes.length;i++){
-            contenidoSencillos= `<article class="info">
+            contenidoSencillos += `<article class="info">
             <img src= "${infoArtistas[i].cover_medium}">
-            <h2><a href="detalle_disco.html">${infoAlbumes[i].tittle}</a></h2>
-            <p><a href="detalle_artistas.html">${infoAlbumes[i].artist.name}</a></p>
+            <h2><a href="detalle_disco.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].tittle}</a></h2>
+            <p><a href="detalle_artistas.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].artist.name}</a></p>
             </article>`
         } albumesDestacados.innerHTML += contenidoAlbumes;
     })
