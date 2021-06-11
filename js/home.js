@@ -56,7 +56,7 @@ fetch (url)
         let infoCanciones= data.data;
         let contenidoSencillos= ''
         for (let i=0;i<infoCanciones.length;i++){
-            contenidoSencillos += `<article class="info">
+            contenidoSencillos += `<article class="infoHome">
             <img src= "${infoCanciones[i].picture_medium}">
             <h2><a href="detalle_cancion.html?id=${infoCanciones[i].id}">${infoCanciones[i].tittle}</a></h2> 
             <p><a href="detalle_artistas.html?id=${infoCanciones[i].id}">${infoCanciones[i].artist.name}</a></p> </article>`
@@ -76,7 +76,7 @@ fetch(artistas)
         let infoArtistas= data.data;
         let contenidoArtistas= ''
         for (let i=0;i<infoArtistas.length;i++){
-            contenidoArtistas += `<article class="info">
+            contenidoArtistas += `<article class="infoHome">
             <img src= "${infoArtistas[i].picture_medium}">
             <h2><a href="detalle_artistas.html?id=${infoArtistas[i].id}">${infoArtistas[i].name}</a></h2></article>`
         } artistasDestacados.innerHTML += contenidoArtistas;
@@ -96,7 +96,7 @@ fetch(albumes)
         let infoAlbumes= data.data;
         let contenidoAlbumes= ''
         for (let i=0;i<infoAlbumes.length;i++){
-            contenidoAlbumes += `<article class="info">
+            contenidoAlbumes += `<article class="infoHome">
             <img src= "${infoAlbumes[i].cover_medium}">
             <h2><a href="detalle_disco.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].tittle}</a></h2>
             <p><a href="detalle_artistas.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].artist.name}</a></p>
