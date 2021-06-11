@@ -1,5 +1,20 @@
 //HEADER
 //buscador
+<<<<<<< HEAD
+let formulario = document.querySelector("form"); 
+let campoBuscar = document.querySelector(".Buscar"); 
+let alert = document.querySelector(".alert"); 
+formulario.addEventListener('submit', function(event) {
+event.preventDefault();
+if ( campoBuscar.value== '') {
+alert.innerText="El campo está vacío, escribe al menos 3 caracteres para poder mostrarte resultados";
+} else if ( campoBuscar.value.lenght <3){
+alert.innerText="El campo tiene que tener al menos 3 caracteres para poder mostrarte resultados";
+}else{
+this.submit();
+}
+})
+=======
 let queryString= location.search;
 let queryStringToObject= new URLSearchParams(queryString);
 let buscar= queryStringToObject.get{"buscar"};
@@ -97,4 +112,5 @@ fetch(albumes)
     .catch(function(error){
         console.log(error);
     })
+>>>>>>> b8986fe70ea50c205314b7ba75f409b4b23182cf
 
