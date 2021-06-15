@@ -1,4 +1,5 @@
-let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre`
+window.addEventListener('load', function() {
+    let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre`
 
 fetch(url)
 .then(function(response){
@@ -17,3 +18,6 @@ infoGenero.innerHTML += contenidoGenero;
 .catch(function(error){
  console.log(error);
  })
+
+    });
+    

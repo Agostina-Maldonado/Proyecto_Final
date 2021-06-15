@@ -68,6 +68,14 @@ body{
     text-align: center;
     background-color: grey;
 }
+.alert{
+    color: red;
+}
+.input{
+    border-color: #900;
+      background-color: #FDD;
+    }   
+ 
  /*footer*/
  .main-footer{
     display: flex;

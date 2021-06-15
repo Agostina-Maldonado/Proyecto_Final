@@ -1,26 +1,26 @@
 //HEADER
 //buscador
-<<<<<<< HEAD
 let formulario = document.querySelector("form"); 
-let campoBuscar = document.querySelector(".Buscar"); 
+let campoBuscar = document.querySelector(".buscar"); 
 let alert = document.querySelector(".alert"); 
 formulario.addEventListener('submit', function(event) {
-event.preventDefault();
-if ( campoBuscar.value== '') {
+event.preventDefault(); //Detenemos el comportamiento default del formulario que es enviarse.
+if (campoBuscar.value== '' ) { //Chequeamos el contenido.
 alert.innerText="El campo está vacío, escribe al menos 3 caracteres para poder mostrarte resultados";
-} else if ( campoBuscar.value.lenght <3){
+closeIcon.style.display.style.display="inline";
+} else if (campoBuscar.value.lenght<3){
 alert.innerText="El campo tiene que tener al menos 3 caracteres para poder mostrarte resultados";
+closeIcon.style.display.style.display="inline";
 }else{
-this.submit();
+this.submit()
 }
+ //limpiar el mensaje de error cuando el usario modifique el contenido del campo input.
+ campoBuscar.addEventListener('input', function(){
+    alert.innerText = '';
+    closeIcon.style.display = 'none';
 })
-=======
-let queryString= location.search;
-let queryStringToObject= new URLSearchParams(queryString);
-let buscar= queryStringToObject.get{"buscar"};
-let url = `https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=${buscar}`;
-let datoBuscado: document.querySelector (".datoBuscado");
-datoBuscado.innerText = buscar
+    
+
 
 //carrousel
 var slideIndex = 1;
@@ -112,5 +112,3 @@ fetch(albumes)
     .catch(function(error){
         console.log(error);
     })
->>>>>>> b8986fe70ea50c205314b7ba75f409b4b23182cf
-
