@@ -19,6 +19,7 @@ event.preventDefault(); //Detenemos el comportamiento default del formulario que
  campoBuscar.addEventListener('input', function(){
     alert.innerText = '';
     closeIcon.style.display = 'none';
+    })
 })
     
 //carrousel
@@ -63,8 +64,8 @@ fetch (url)
         let contenidoSencillos= ''
         for (let i=0;i<infoCanciones.length;i++){
             contenidoSencillos += `<article class="infoHome">
-            <img src= "${infoCanciones[i].picture_medium}">
-            <h2><a href="detalle_cancion.html?id=${infoCanciones[i].id}">${infoCanciones[i].tittle}</a></h2> 
+            <img src= "${infoCanciones[i].artist.picture_medium}">
+            <h2><a href="detalle_cancion.html?id=${infoCanciones[i].id}">${infoCanciones[i].title}</a></h2> 
             <p><a href="detalle_artistas.html?id=${infoCanciones[i].id}">${infoCanciones[i].artist.name}</a></p> </article>`
         }sencillos.innerHTML += contenidoSencillos;
     })
@@ -103,11 +104,12 @@ fetch(albumes)
         for (let i=0;i<infoAlbumes.length;i++){
             contenidoAlbumes += `<article class="infoHome">
             <img src= "${infoAlbumes[i].cover_medium}">
-            <h2><a href="detalle_disco.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].tittle}</a></h2>
+            <h2><a href="detalle_disco.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].title}</a></h2>
             <p><a href="detalle_artistas.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].artist.name}</a></p>
             </article>`
         } albumesDestacados.innerHTML += contenidoAlbumes;
     })
     .catch(function(error){
         console.log(error);
+
     }) 

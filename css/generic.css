@@ -498,6 +498,12 @@ article{
 i{
     color: white;
 }
+.search_albumes{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
 /* search */
 .leyenda{
     display: none;

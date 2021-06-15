@@ -1,6 +1,8 @@
-let queryString = new URLSearchParams(location.search)
-let buscar= queryString.get ('buscar');
+let queryString = new URLSearchParams(window.location.search)
+let buscar= queryString.get('Buscar');
 let artistas = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q='+buscar
+console.log(artistas);
+console.log(buscar);
 fetch(artistas)
     .then(function(response){
         return response.json();
@@ -32,7 +34,7 @@ fetch(albumes)
     })
     .then(function (data){
         console.log(data);
-        let listAlbum= document.querySelector(".lista_artistas");
+        let listAlbum= document.querySelector(".search_albumes");
         let infoAlbum= data.data ;
         let contenidoAlbum = ''
         for( let i=0; i<infoAlbum.length;i++){
@@ -64,12 +66,13 @@ fetch(Canciones)
         let contenidoCanciones = '';
         for( let i=0; i<infoCanciones.length;i++){
             contenidoCanciones +=	
-            `<td class="player"><img src="${infoCanciones[i].artist.picture_small}"></td>
-            <td><a href="detalle_cancion.html?id=${infoCanciones[i].id}">${infoCanciones[i].title}</a></td>
-            <td></td>
-            <td><a href="detalle_artistas.html?id=${infoCanciones[i].id}">${infoCanciones[i].artist.name}</a></td>
-            <td><a href="detalle_disco.html?id=${infoCanciones[i].id}">${infoCanciones[i].album.title}</a></td>
-            <td>${infoCanciones[i].duration}</td>`
+            `<tr> 
+                <td class="player><img src="${infoCanciones[i].artist.picture_small}"><a href="detalle_cancion.html?id=${infoCanciones[i].id}">${infoCanciones[i].title}</a></td>
+                <td></td>
+                <td><a href="detalle_artistas.html?id=${infoCanciones[i].id}">${infoCanciones[i].artist.name}</a></td>
+                <td><a href="detalle_disco.html?id=${infoCanciones[i].id}">${infoCanciones[i].album.title}</a></td>
+                <td>${infoCanciones[i].duration}</td>
+            </tr>`
         }
         songs.innerHTML += contenidoCanciones;
         })
