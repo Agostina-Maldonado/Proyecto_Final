@@ -110,4 +110,4 @@ fetch(albumes)
     })
     .catch(function(error){
         console.log(error);
-    }
+    }) 
