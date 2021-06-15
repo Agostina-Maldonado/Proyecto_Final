@@ -204,6 +204,20 @@ body{
     text-align: center;
     justify-content: space-between;
 }
+.artistas{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
+.albumes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+}
 .img-art{
     border-radius: 50%;
 }
@@ -214,7 +228,7 @@ body{
 img{
     width: 100%;
 }
-.sencillos article{
+.infoHome{
     width: 100%;
     background-color:#B91D1D;
     text-align: center;
@@ -550,7 +564,13 @@ i{
 .sencillos{
     justify-content: space-around;
  }
-  .sencillos article{
+.artistas{
+    justify-content: space-around;
+}
+.albumes{
+    justify-content: space-around;
+}
+  .infoHome{
     width: 30%;
     justify-content: space-around;
 }
