@@ -1,8 +1,25 @@
+window.addEventListener('load', function () {
+    let loader= document.querySelector('.loader')
+    loader.style.display= 'none';
+})
 let queryString = new URLSearchParams(window.location.search)
 let buscar= queryString.get('Buscar');
+let resultados= 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=' +buscar
 let artistas = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q='+buscar
 console.log(artistas);
 console.log(buscar);
+
+let informacion= document.querySelector("h1")
+if(buscar!= null){
+informacion.innerText= 'Resultados de busqueda para: '+buscar
+}else{
+    informacion.innerText= 'No encontramos resultados, lo siento '
+}
+/*let evento= document.querySelector('.card-nombre_artista')
+let titulos= document.querySelector('h3', 'p')
+evento.addEventListener('mouseover', function() {
+    titulos.style.fontStyle = 'strong';
+})*/
 fetch(artistas)
     .then(function(response){
         return response.json();
