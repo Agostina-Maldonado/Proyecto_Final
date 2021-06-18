@@ -11,11 +11,11 @@ console.log(buscar);
 
 let informacion= document.querySelector(".tituloInfo")
 
-let evento= document.querySelector('.card-nombre_artista')
+/*let evento= document.querySelector('.card-nombre_artista')
 let titulos= document.querySelector('h3', 'p')
 evento.addEventListener('mouseover', function() {
     titulos.style.fontStyle = 'bold';
-})
+})*/
 fetch(artistas)
     .then(function(response){
         return response.json();

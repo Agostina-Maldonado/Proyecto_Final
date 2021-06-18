@@ -503,6 +503,11 @@ i{
     flex-wrap: wrap;
     align-items: center;
 }
+.loader{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
 /* search */
 .leyenda{
     display: none;
