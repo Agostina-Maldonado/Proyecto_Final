@@ -75,7 +75,6 @@ body{
     border-color: #900;
       background-color: #FDD;
     }   
- 
  /*footer*/
  .main-footer{
     display: flex;
@@ -547,6 +546,10 @@ i{
 .subtitulo{
     font-size: 30px;
 }
+ /*header*/
+ .alertTotal alert{
+     font-size: 8px;
+ }
  /*footer*/
 .logo-footer{
     width: 20%;
@@ -587,7 +590,7 @@ i{
 .card-genero{
     width: 25%;
     margin: 3%;
-    font-size: 20px;
+    font-size: 16px;
 }
 .boton_explorar{
     font-size: 12px;
