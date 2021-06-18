@@ -3,23 +3,19 @@ window.addEventListener('load', function () {
     loader.style.display= 'none';
 })
 let queryString = new URLSearchParams(window.location.search)
-let buscar= queryString.get('Buscar');
+let buscar= queryString.get('buscar');
 let resultados= 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=' +buscar
 let artistas = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q='+buscar
 console.log(artistas);
 console.log(buscar);
 
-let informacion= document.querySelector("h1")
-if(buscar!= null){
-informacion.innerText= 'Resultados de busqueda para: '+buscar
-}else{
-    informacion.innerText= 'No encontramos resultados, lo siento '
-}
-/*let evento= document.querySelector('.card-nombre_artista')
+let informacion= document.querySelector(".tituloInfo")
+
+let evento= document.querySelector('.card-nombre_artista')
 let titulos= document.querySelector('h3', 'p')
 evento.addEventListener('mouseover', function() {
-    titulos.style.fontStyle = 'strong';
-})*/
+    titulos.style.fontStyle = 'bold';
+})
 fetch(artistas)
     .then(function(response){
         return response.json();
@@ -29,6 +25,13 @@ fetch(artistas)
         let listArtist= document.querySelector(".lista_artistas");
         let infoArtistas= data.data ;
         let contenido = '';
+        
+        if(infoArtistas.length> 0){
+
+        informacion.innerText= 'Resultados de busqueda para:'+buscar ;
+            }else{
+        informacion.innerText= 'No encontramos resultados, lo siento ' ;
+            }
         for( let i=0; i<infoArtistas.length;i++){
             contenido += `	<article class="imagen_y_texto">
             <div class="card-image">
