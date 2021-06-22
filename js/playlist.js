@@ -20,7 +20,7 @@ event.preventDefault(); //Detenemos el comportamiento default del formulario que
     })
 })
 let idTrack= //(completar con el id de la cancion que quiero agregar en playlist)//
-let url= 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q='+idTrack
+let url= 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q='+idTrack;
 fetch(url)
     .then(function(response){
         return response.json();
