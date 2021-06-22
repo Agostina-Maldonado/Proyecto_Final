@@ -36,33 +36,46 @@ fetch(url)
     .then(function(data){
         console.log(data);
         //Primera sección
-        let image= document.querySelector('.justin');
-        let title= document.querySelector('.white');
-        let artista= document.querySelector('.artista');
-        let año= document.querySelector('.fecha');
-        let genero= document.querySelector('.genero');
+        let primeraSeccion = document.querySelector('.primera_seccion')
+        primeraSeccion.innerHTML +=`<div class="imagen">
+                                        <img class="justin" src="${data.cover_medium}" alt="Foto del disco de Justin">
+                                    </div>
+                                    <article>
+                                        <h2 class="white"><a href="detalle_disco.html?id=${data.id}">${data.title}</a></h2>
+                                        <p class="artista"><a href="detalle_artista.html?id=${data.artist.id}">${data.artist.name}</a></p>
+                                        <p class="fecha">${data.release_date}</p>
+                                        <p class="genero"><a href="detalle_genero.html?id=${data.genre_id}">${data.genres.data[0].name}</a></p>
+                                    </article>`
 
-        image.src = data.cover_medium;
-        title.innerText = data.title;
-        artista.innerText= data.artist.name;
-        año.innerText = data.release_date;
-        genero.innerText = data.genres.data[0].name;
-
-        //Segunda sección
+        //Segunda sección en mobile
         //Nos quedamos solo con el array de datos que contiene las canciones del album
-        let info= data.data;
+        let info= data.tracks.data;
         //Obtenemos el contenedor
-        let cancionesContainer= document.querySelector()
-        let nombreCancion= document.querySelector('.nombreCancion');
-        let reproducciones= document.querySelector('.reproducciones');
+        let cancionesContainer= document.querySelector('.segunda_seccion');
+        //Definimos variable para poner el contenido
+        let canciones = '';
+        //Bucle para recorrer los datos
+        for(let i=0; i<info.length; i++){
+            canciones +=`<article class="article_disco">
+                            <div class="player">
+                                <i class="far fa-play-circle"></i>
+                            </div>
+                            <div class="texto_disco">
+                                <h4><a href="detalle_cancion.html?id=${info[i].id}">${info[i].title}</a></h4>
+                                <p><a href="detalle_artista.html?id=${info[i].id}">${info[i].artist.name}</a></p>
+                            </div>
+                        </article>`
+        }
+        cancionesContainer.innerHTML += canciones;
 
-        
-
+        //Segunda sección en desktop(tabla)
 
     })
+
     .catch(function(error){
         console.log("Error: "+ error);
     })
+
 
 
             
