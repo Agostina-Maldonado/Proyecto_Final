@@ -70,6 +70,21 @@ fetch(url)
 
         //Segunda sección en desktop(tabla)
 
+        let contenidoTabla= document.querySelector(".informacionResultados");
+        let contenidoCanciones = '';
+        for(let i=0; i<info.length;i++){
+            contenidoCanciones +=	
+                                    `<tr> 
+                                        <td class="player><img src="${info[i].artist.picture_small}"><a href="detalle_cancion.html?id=${info[i].id}">${info[i].title}</a></td>
+                                        <td></td>
+                                        <td><a href="detalle_artistas.html?id=${info[i].id}">${info[i].artist.name}</a></td>
+                                        <td><a href="detalle_disco.html?id=${data.id}">${data.title}</a></td>
+                                        <td>${info[i].duration}</td>
+                                    </tr>`
+        }
+        
+        contenidoTabla.innerHTML += contenidoCanciones;
+        
     })
 
     .catch(function(error){
