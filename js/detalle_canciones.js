@@ -1,4 +1,3 @@
-console.log('hola');
 //HEADER
 //buscador
 let formulario = document.querySelector("form"); 
@@ -21,24 +20,25 @@ event.preventDefault(); //Detenemos el comportamiento default del formulario que
     })
 })
 
-let url = `https://cors-anywhere.herokuapp.com/https://developers.deezer.com/api/track`
+let queryString = location.search;
+let queryStringToObject = new URLSearchParams(queryString);
+let id = queryStringToObject.get('id');
+
+let proxy = 'https://cors-anywhere.herokuapp.com/';
+let cancion = `https://api.deezer.com/track/{id}`;
+let url = proxy + cancion;
 
 fetch(url)
 .then(function(response){
  return response.json();
 }) .then(function(data){
     console.log(data)
-    let sectionDetalleCancion = data.data;
-    let InfoCanciones= document.querySelector('.texto_cancion');
-    let contenidoCanciones= ''
 
-for(let i=1; i<sectionDetalleCancion.length; i++){
-              contenidoCanciones+= `<h2 class="fondo_negro">${sectionDetalleCancion[i].title}</h2>
-              <p><a href="detalle_artistas.html?id=${sectionDetalleCancion[i].id}"></a>${sectionDetalleCancion[i].artist.name}</p>
-              <p><a href="detalle_disco.html?id=${sectionDetalleCancion[i].id}"></a>${sectionDetalleCancion[i].album.title}</p>`
-}
-InfoCanciones.innerHTML += contenidoCanciones;
 })
 .catch(function(error){
     console.log(error);
 })
+
+/*`<h2 class="fondo_negro">${sectionDetalleCancion[i].title}</h2>
+              <p><a href="detalle_artistas.html?id=${sectionDetalleCancion[i].id}"></a>${sectionDetalleCancion[i].artist.name}</p>
+              <p><a href="detalle_disco.html?id=${sectionDetalleCancion[i].id}"></a>${sectionDetalleCancion[i].album.title}</p>` */
