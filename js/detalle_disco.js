@@ -45,7 +45,7 @@ fetch(url)
         title.innerText = data.title;
         artista.innerText= data.artist.name;
         año.innerText = data.release_date;
-        genero.innerText = data.genres.data.name;
+        genero.innerText = data.genres.data[0].name;
 
     })
     .catch(function(error){
