@@ -418,9 +418,6 @@ article .numero{
     display: flex;
     justify-content: center;
 }
-.desktop {
-    display: none;
-} 
 
 /*  playlist */
 
@@ -732,20 +729,12 @@ tr{
     line-height: 3;
 }
 
-/* detalle cancion */  
+/* detalle cancion*/
 .fondo{
     background-size: cover;
 }
 .fondo_negro{
     font-size: 40px;
-}
-.mobile{
-    display: none;
-}
-.desktop{
-    width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 /* playlist */
