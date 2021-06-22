@@ -7,7 +7,7 @@ formulario.addEventListener('submit', function(event){
 event.preventDefault(); //Detenemos el comportamiento default del formulario que es enviarse.
     if (campoBuscar.value==''){ //Chequeamos el contenido.
         alert.innerHTML= `<p class="alert">El campo está vacío, escribe al menos 3 caracteres para poder mostrarte resultados</p><i class="far fa-times-circle"></i>`;
-    }else if (campoBuscar.value.lenght<3){
+    }else if (campoBuscar.value.lent<3){
         alert.innerHTML= `<p class="alert">El campo tiene que tener al menos 3 caracteres para poder mostrarte resultados</p><i class="far fa-times-circle"></i>`;
     }else{
         this.submit()
@@ -60,7 +60,7 @@ fetch (url)
         let sencillos= document.querySelector('.sencillos');
         let infoCanciones= data.data;
         let contenidoSencillos= ''
-        for (let i=0;i<infoCanciones.length;i++){
+        for (let i=0;i<9;i++){
             contenidoSencillos += `<article class="infoHome">
             <img src= "${infoCanciones[i].artist.picture_medium}">
             <h2><a href="detalle_cancion.html?id=${infoCanciones[i].id}">${infoCanciones[i].title}</a></h2> 
@@ -80,7 +80,7 @@ fetch(artistas)
         let artistasDestacados= document.querySelector('.artistas');
         let infoArtistas= data.data;
         let contenidoArtistas= ''
-        for (let i=0;i<infoArtistas.length;i++){
+        for (let i=0;i<9;i++){
             contenidoArtistas += `<article class="infoHome">
             <img src= "${infoArtistas[i].picture_medium}">
             <h2><a href="detalle_artistas.html?id=${infoArtistas[i].id}">${infoArtistas[i].name}</a></h2></article>`
@@ -99,7 +99,7 @@ fetch(albumes)
         let albumesDestacados= document.querySelector('.albumes');
         let infoAlbumes= data.data;
         let contenidoAlbumes= ''
-        for (let i=0;i<infoAlbumes.length;i++){
+        for (let i=0;i<9;i++){
             contenidoAlbumes += `<article class="infoHome">
             <img src= "${infoAlbumes[i].cover_medium}">
             <h2><a href="detalle_disco.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].title}</a></h2>
