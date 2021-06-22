@@ -70,11 +70,15 @@ body{
 }
 .alert{
     color: red;
+    font-size: 10px;
 }
 .input{
     border-color: #900;
       background-color: #FDD;
     }   
+.far.fa-times-circle{
+    font-size: 10px;
+}
  /*footer*/
  .main-footer{
     display: flex;
@@ -265,13 +269,15 @@ img{
     flex-wrap: wrap;
     align-items: center;
 }
-
+.card-image{
+    width: 50%;
+}
 .imagen_y_texto{
     width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
   }
 
 .img_artista{
@@ -290,11 +296,12 @@ img{
 .card-nombre_artista h3{
     font-size: 14px;
     color: white;
-    margin-right: 10px;
+    width: 40%;
 }
 .boton{
     text-decoration: underline;
     font-size: 10px;
+    width: 40%;
 }
 
 /*detalle-artistas*/
@@ -469,7 +476,7 @@ article .numero{
 /* search results */
 h2{
     color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 .search-artist{
     display: flex;
@@ -552,9 +559,12 @@ i{
     font-size: 30px;
 }
  /*header*/
- .alertTotal alert{
-     font-size: 8px;
- }
+ .alert{
+    font-size: 15px;
+}  
+.far.fa-times-circle{
+    font-size: 15px;
+}
  /*footer*/
 .logo-footer{
     width: 20%;
@@ -602,22 +612,37 @@ i{
 }
 /*DETALLE_GENERO.HTML*/
 .lista_artistas {
-    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 .imagen_y_texto{
-    width: 40%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card-image{
+    width: 50%;
 }
 .img_artista{
-    border-radius: 50%;
-    width: 100px;
+    border-radius: 100%;
+    width: 150px;
 }
+
 .card-nombre_artista h3{
     font-size: 25px;
+    width: 45%;
 }
 .boton{
     font-size: 16px;
+    width: 45%;
+;
 }
 
  /*detalle artista*/
