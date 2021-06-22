@@ -35,6 +35,7 @@ fetch(url)
     })
     .then(function(data){
         console.log(data);
+        //Primera sección
         let image= document.querySelector('.justin');
         let title= document.querySelector('.white');
         let artista= document.querySelector('.artista');
@@ -46,6 +47,17 @@ fetch(url)
         artista.innerText= data.artist.name;
         año.innerText = data.release_date;
         genero.innerText = data.genres.data[0].name;
+
+        //Segunda sección
+        //Nos quedamos solo con el array de datos que contiene las canciones del album
+        let info= data.data;
+        //Obtenemos el contenedor
+        let cancionesContainer= document.querySelector()
+        let nombreCancion= document.querySelector('.nombreCancion');
+        let reproducciones= document.querySelector('.reproducciones');
+
+        
+
 
     })
     .catch(function(error){

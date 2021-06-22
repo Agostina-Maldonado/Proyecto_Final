@@ -25,20 +25,27 @@ let queryStringToObject = new URLSearchParams(queryString);
 let id = queryStringToObject.get('id');
 
 let proxy = 'https://cors-anywhere.herokuapp.com/';
-let cancion = `https://api.deezer.com/track/{id}`;
+let cancion = `https://api.deezer.com/track/${id}`;
 let url = proxy + cancion;
 
 fetch(url)
-.then(function(response){
- return response.json();
-}) .then(function(data){
-    console.log(data)
+    .then(function(response){
+        return response.json();
+    }) 
+    .then(function(data){
+        console.log(data);
+        let seccion= document.querySelector('.texto_cancion');
+        seccion.innerHTML+=`<h2 class="fondo_negro">${data.title}</h2>
+                            <p class="cantante"><a href="detalle_artistas.html?id=${data.artist.id}">${data.artist.name}</a></p>
+                            <p class="album"><a href="detalle_disco.html?id=${data.album.id}">${data.album.title}</a></p>`
 
-})
-.catch(function(error){
-    console.log(error);
-})
+        //Player
+        let player= document.querySelector('iframe');
+        player.src= `https://widget.deezer.com/widget/dark/track/${id}`
+        let fondo=document.querySelector('.fondo');
+        fondo.style.backgroundImage= `url(${data.album.cover_medium})`
+    })
+    .catch(function(error){
+        console.log(error);
+    })
 
-/*`<h2 class="fondo_negro">${sectionDetalleCancion[i].title}</h2>
-              <p><a href="detalle_artistas.html?id=${sectionDetalleCancion[i].id}"></a>${sectionDetalleCancion[i].artist.name}</p>
-              <p><a href="detalle_disco.html?id=${sectionDetalleCancion[i].id}"></a>${sectionDetalleCancion[i].album.title}</p>` */

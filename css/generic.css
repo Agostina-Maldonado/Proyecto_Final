@@ -391,9 +391,9 @@ article .numero{
 
   /* detalle cancion */
 .fondo{
-    background-image: url(../images/peaches.jpg);
-    background-size: 400px 300px;
-    background-repeat:no-repeat ;
+    /*background-image: url(../images/peaches.jpg);*/
+    background-size: cover;
+    background-repeat: no-repeat;
     background-position: top;
 }
 .fondo_negro{
@@ -406,7 +406,11 @@ article .numero{
     align-items: center;
     justify-content: center;
 }
-
+.mobile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .desktop {
     display: none;
 } 
@@ -714,9 +718,9 @@ tr{
     display: none;
 }
 .desktop{
-    display: block;
-    bottom: 0px;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 /* playlist */
