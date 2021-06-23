@@ -81,10 +81,12 @@ fetch(artistas)
         let infoArtistas= data.data;
         let contenidoArtistas= ''
         for (let i=0;i<9;i++){
-            contenidoArtistas += `<article class="infoHome">
-            <img src= "${infoArtistas[i].picture_medium}">
-            <h2><a href="detalle_artistas.html?id=${infoArtistas[i].id}">${infoArtistas[i].name}</a></h2></article>`
-        } artistasDestacados.innerHTML += contenidoArtistas;
+            contenidoArtistas +=`<article class="infoHome">
+                                    <img src= "${infoArtistas[i].picture_medium}">
+                                    <h2><a href="detalle_artista.html?id=${infoArtistas[i].id}">${infoArtistas[i].name}</a></h2>
+                                </article>`
+        } 
+        artistasDestacados.innerHTML += contenidoArtistas;
     })
     .catch(function(error){
         console.log(error);
