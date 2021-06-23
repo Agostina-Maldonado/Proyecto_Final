@@ -403,6 +403,11 @@ article .numero{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .fondo_negro{
     background-color: black;
@@ -420,6 +425,31 @@ article .numero{
     justify-content: center;
 }
 
+.fav{
+    background-color: #B91D1D;
+    font-size: 8px;
+    color:#fff;
+    text-decoration:none;
+    width:100px;
+    text-align:center;
+    border-radius: 10%;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    
+}
+.cantante{
+    font-size: 12px;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.album{
+    font-size: 12px;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.5);
+}
 /*  playlist */
 
 .white_mobile{
@@ -473,7 +503,6 @@ article .numero{
 .table{
     display: none;
 }
-
 
 /* search results */
 h2{
@@ -786,6 +815,16 @@ tr{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+.fav{
+    font-size: 16px;  
+}
+.cantante{
+    font-size: 24px;
+
+}
+.album{
+    font-size: 24px;
 }
 /* playlist */
 .white_mobile{
