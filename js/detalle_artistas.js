@@ -77,15 +77,3 @@ fetch(urlAlbum)
         console.log("Error: "+ error);
     })
 
-/* <article class="topcanciones">
-            <div class="justinimage">
-                <img src="images/justin-bieber-justice.jpeg" alt="foto de justin">
-            </div>
-            <div class="numero">
-                <p>1</p>
-            </div>
-            <div class="texto">
-                <p class="negrita"><a href="detalle_cancion.html">Peaches</a></p>
-                <p class="chico">167,465,750</p>
-            </div>
-        </article> */

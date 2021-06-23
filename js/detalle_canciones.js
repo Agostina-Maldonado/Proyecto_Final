@@ -49,3 +49,20 @@ fetch(url)
         console.log(error);
     })
 
+//Agregar canción a lista de favoritos
+let favoritos = [];
+
+//Agregar ID de la canción dentro del array cuando el asuario haga click en agregar a favoritos.
+let fav = document.querySelector('.fav');
+fav.addEventListener('click', function(e){
+    e.preventDefault(); //como el link tiene un comportamiento default acá lo paro.
+
+    //Guardamos el id en el array
+    favoritos.push(id); //A favoritos(array) le pusheo el id que ya capture en la línea 25
+
+    // Armamos un string para poder guardarlo en local storage
+    let favParaStorage = JSON.stringify(favoritos);
+    localStorage.setItem('favoritos', favParaStorage)
+    console.log(localStorage);
+
+})
