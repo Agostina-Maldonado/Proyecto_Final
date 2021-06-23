@@ -79,11 +79,11 @@ fetch(albumes)
         let infoAlbum= data.data ;
         let contenidoAlbum = ''
         for( let i=0; i<infoAlbum.length;i++){
-            contenidoAlbum += `<article class="imagen_y_texto">
-                <div class="card-image">
-                    <img class="img_artista" src="${infoAlbum[i].cover_small}" alt="justin bieber">
+            contenidoAlbum += `<article class="imagenesYparrafos">
+                <div class="card-imageAlbum">
+                    <img class="img_album" src="${infoAlbum[i].cover_small}" alt="justin bieber">
                  </div>
-                <div class="card-nombre_artista">
+                <div class="card-album">
                     <h3><a href="./detalle_disco.html?id=${infoAlbum[i].id}">${infoAlbum[i].title}</a></h3>
                     <p><a href="./detalle_artistas.html?id=${infoAlbum[i].artist.id}">${infoAlbum[i].artist.name}</a></p>
                 </div>	
