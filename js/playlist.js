@@ -80,8 +80,8 @@ for(let i=0; i<favoritos.length; i++){
             tabla.innerHTML +=  `<tr> 
                                 <td class="player><img src="${data.artist.picture_small}"><a href="detalle_cancion.html?id=${data.id}">${data.title}</a></td>
                                 <td></td>
-                                <td><a href="detalle_artista.html?id=${favoritos[i]}">${data.artist.name}</a></td>
-                                <td><a href="detalle_disco.html?id=${favoritos[i]}">${data.album.title}</a></td>
+                                <td><a href="detalle_artista.html?id=${data.artist.id}">${data.artist.name}</a></td>
+                                <td><a href="detalle_disco.html?id=${data.album.id}">${data.album.title}</a></td>
                                 <td>${data.duration}</td>
                                 </tr>`
            
