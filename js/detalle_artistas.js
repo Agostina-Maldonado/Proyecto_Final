@@ -43,8 +43,8 @@ fetch(url)
     })
 
 
-let ArtistaAlbum= `https://api.deezer.com/artist/${id}/albums`
-let urlAlbum = proxy + ArtistaAlbum;
+let artistaAlbum= `https://api.deezer.com/artist/${id}/albums`
+let urlAlbum = proxy + artistaAlbum;
 fetch(urlAlbum)
     .then(function(response){
         return response.json();
@@ -65,7 +65,7 @@ fetch(urlAlbum)
                                 <p>${i}</p>
                             </div>
                             <div class="texto">
-                                <p class="negrita"><a href="detalle_cancion.html?id=${data.data[i].id}">${data.data[i].title}</a></p>
+                                <p class="negrita"><a href="detalle_disco.html?id=${data.data[i].id}">${data.data[i].title}</a></p>
                                 <p class="chico">${data.data[i].release_date}</p>
                             </div>
                         </article> `
