@@ -49,11 +49,11 @@ fetch(url)
         console.log(error);
     })
 
-//Agregar canción a lista de favoritos
+//Creo el array para agregar una canción a lista de favoritos
 let favoritos = [];
-//Recuperar datos del storage 
+//Recuperar datos del storage (me fijo si ya hay información guardada en el storage)
 let recuperoStorage= localStorage.getItem('favoritos');
-//Chequear y agregar la información de local storage en el array
+// En el caso de que haya información en el storage, la grego en mi variable favoritos que contiene el array
 if(recuperoStorage != null){ //si me devolvió algo de datos (distinto de null), entonces a esos datos los voy a parsear para que me lo devuelva en formato de array y así poder trabajar en este.
     favoritos = JSON.parse(recuperoStorage);
 }
