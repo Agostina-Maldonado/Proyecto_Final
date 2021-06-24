@@ -36,7 +36,7 @@ fetch(url)
         console.log(data);
         let seccion= document.querySelector('.texto_cancion');
         seccion.innerHTML+=`<h2 class="fondo_negro">${data.title}</h2>
-                            <p class="cantante"><a href="detalle_artistas.html?id=${data.artist.id}">${data.artist.name}</a></p>
+                            <p class="cantante"><a href="detalle_artista.html?id=${data.artist.id}">${data.artist.name}</a></p>
                             <p class="album"><a href="detalle_disco.html?id=${data.album.id}">${data.album.title}</a></p>`
 
         //Player

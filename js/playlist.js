@@ -24,14 +24,13 @@ event.preventDefault(); //Detenemos el comportamiento default del formulario que
 let recuperoStorage= localStorage.getItem('favoritos');
 //Voy a pasar de string a array para poder trabajar 
 let favoritos = JSON.parse(recuperoStorage);
-let proxy = 'https://cors-anywhere.herokuapp.com/';
-//Segunda sección en mobile
 
-//Avisar al usuario que no hay canciones en su lista de favoritos. 
+//Segunda sección en mobile
 
 //Si hay datos, necesito recorrer el array (bucle for)
 for(let i=0; i<favoritos.length; i++){
     //buscarYMostrarFavoritos
+    let proxy = 'https://cors-anywhere.herokuapp.com/';
     let cancion = `https://api.deezer.com/track/${favoritos[i]}`;
     let url = proxy + cancion;
     fetch(url)
