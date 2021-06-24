@@ -59,7 +59,7 @@ fetch(urlAlbum)
         for(let i=1; i<6; i++){
             albums +=   `<article class="topcanciones">
                             <div class="justinimage">
-                                <img src=${data.data[i].cover_medium} alt="foto de justin">
+                                <img src=${data.data[i].cover_medium} alt="">
                             </div>
                             <div class="numero">
                                 <p>${i}</p>

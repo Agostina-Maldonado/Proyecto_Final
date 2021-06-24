@@ -415,6 +415,7 @@ article .numero{
 }
 .fondo_negro{
     background-color: black;
+    color: white;
 }
 .texto_cancion{
     display: flex;
