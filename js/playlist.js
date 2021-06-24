@@ -27,9 +27,18 @@ let favoritos = JSON.parse(recuperoStorage);
 
 //sección del título en mobile
 let numeroCanciones= document.querySelector('.numeroCanciones');
-numeroCanciones.innerText = favoritos.length;
+if(favoritos){
+    numeroCanciones.innerText = favoritos.length;
+}else{
+    numeroCanciones.innerText = 'No tenes canciones agregadas a favoritos';
+}
 //sección de las canciones en desktop
 let reproducciones= document.querySelector('.reproducciones');
+if(favoritos){
+    reproducciones.innerText = favoritos.length;
+}else{
+    reproducciones.innerText = 'No tenes canciones agregadas a favoritos';
+}
 reproducciones.innerText=  favoritos.length;
 
 //Segunda sección en mobile
