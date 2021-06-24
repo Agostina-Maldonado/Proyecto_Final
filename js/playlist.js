@@ -27,33 +27,24 @@ let favoritos = JSON.parse(recuperoStorage);
 
 //sección del título en mobile
 let numeroCanciones= document.querySelector('.numeroCanciones');
-if(favoritos){
-    numeroCanciones.innerText = favoritos.length;
-}else{
-    numeroCanciones.innerText = 'No tenes canciones agregadas a favoritos';
-}
+numeroCanciones.innerText = favoritos.length;
+
 //sección de las canciones en desktop
 let reproducciones= document.querySelector('.reproducciones');
-if(favoritos){
-    reproducciones.innerText = favoritos.length;
-}else{
-    reproducciones.innerText = 'No tenes canciones agregadas a favoritos';
-}
-reproducciones.innerText=  favoritos.length;
+reproducciones.innerText = favoritos.length;
 
 //Segunda sección en mobile
-
+let proxy = 'https://cors-anywhere.herokuapp.com/';
 //Si hay datos, necesito recorrer el array (bucle for)
 for(let i=0; i<favoritos.length; i++){
     //buscarYMostrarFavoritos
-    let proxy = 'https://cors-anywhere.herokuapp.com/';
     let cancion = `https://api.deezer.com/track/${favoritos[i]}`;
     let url = proxy + cancion;
     fetch(url)
         .then(function(response){
             return response.json();
         })
-        .then(function (data){
+        .then(function(data){
             console.log(data);
             let lista= document.querySelector('.segunda_seccion');
             lista.innerHTML +=  `<article>
@@ -74,22 +65,22 @@ for(let i=0; i<favoritos.length; i++){
 }
 
 //Segunda sección en desktop
+
 let tabla= document.querySelector('.tablaCanciones');
 for(let i=0; i<favoritos.length; i++){
-    let proxy = 'https://cors-anywhere.herokuapp.com/';
     let cancion = `https://api.deezer.com/track/${favoritos[i]}`;
     let url= proxy + cancion;
     fetch(url)
         .then(function(response){
             return response.json();
         })
-        .then(function (data){
+        .then(function(data){
             console.log(data);
             tabla.innerHTML +=  `<tr> 
                                 <td class="player><img src="${data.artist.picture_small}"><a href="detalle_cancion.html?id=${data.id}">${data.title}</a></td>
                                 <td></td>
-                                <td><a href="detalle_artistas.html?id=${favoritos[i].id}">${data.artist.name}</a></td>
-                                <td><a href="detalle_disco.html?id=${favoritos[i].id}">${data.album.title}</a></td>
+                                <td><a href="detalle_artista.html?id=${favoritos[i]}">${data.artist.name}</a></td>
+                                <td><a href="detalle_disco.html?id=${favoritos[i]}">${data.album.title}</a></td>
                                 <td>${data.duration}</td>
                                 </tr>`
            

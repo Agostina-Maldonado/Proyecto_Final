@@ -64,7 +64,7 @@ fetch (url)
             contenidoSencillos += `<article class="infoHome">
             <img src= "${infoCanciones[i].artist.picture_medium}">
             <h2><a href="detalle_cancion.html?id=${infoCanciones[i].id}">${infoCanciones[i].title}</a></h2> 
-            <p><a href="detalle_artistas.html?id=${infoCanciones[i].id}">${infoCanciones[i].artist.name}</a></p> </article>`
+            <p><a href="detalle_artista.html?id=${infoCanciones[i].id}">${infoCanciones[i].artist.name}</a></p> </article>`
         }sencillos.innerHTML += contenidoSencillos;
     })
     .catch(function(error){
@@ -105,7 +105,7 @@ fetch(albumes)
             contenidoAlbumes += `<article class="infoHome">
             <img src= "${infoAlbumes[i].cover_medium}">
             <h2><a href="detalle_disco.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].title}</a></h2>
-            <p><a href="detalle_artistas.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].artist.name}</a></p>
+            <p><a href="detalle_artista.html?id=${infoAlbumes[i].id}">${infoAlbumes[i].artist.name}</a></p>
             </article>`
         } albumesDestacados.innerHTML += contenidoAlbumes;
     })

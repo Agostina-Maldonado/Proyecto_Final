@@ -19,8 +19,6 @@ event.preventDefault(); //Detenemos el comportamiento default del formulario que
     alert.innerHTML ='';
     })
 })
-
-//DETALLE ARTISTAS
 let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString);
 let id = queryStringToObject.get('id');
