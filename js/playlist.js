@@ -57,7 +57,6 @@ for(let i=0; i<favoritos.length; i++){
                                         <p>${data.release_date}</p>
                                     </div>
                                 </article> `
-           
             })
 
         .catch(function(error){
@@ -84,7 +83,6 @@ for(let i=0; i<favoritos.length; i++){
                                 <td><a href="detalle_disco.html?id=${data.album.id}">${data.album.title}</a></td>
                                 <td>${data.duration}</td>
                                 </tr>`
-           
             })
 
         .catch(function(error){
