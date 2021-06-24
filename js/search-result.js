@@ -27,16 +27,11 @@ let queryString = new URLSearchParams(window.location.search)
 let buscar= queryString.get('buscar');
 let resultados= 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search?q=' +buscar
 let artistas = 'https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q='+buscar
-console.log(artistas);
-console.log(buscar);
+let informacion= document.querySelector(".tituloInfo");
+let h2= document.querySelectorAll("h2");
+let tablaCanciones= document.querySelector(".tablacanciones");
+let tablacancionesDos= document.querySelector(".tablacanciones2");
 
-let informacion= document.querySelector(".tituloInfo")
-
-/*let evento= document.querySelector('.card-nombre_artista')
-let titulos= document.querySelector('h3', 'p')
-evento.addEventListener('mouseover', function() {
-    titulos.style.fontStyle = 'bold';
-})*/
 fetch(artistas)
     .then(function(response){
         return response.json();
@@ -51,7 +46,10 @@ fetch(artistas)
 
         informacion.innerText= 'Resultados de busqueda para:'+buscar ;
             }else{
-        informacion.innerText= 'No encontramos resultados, lo siento ';
+        informacion.innerText= 'No encontramos resultados para: ' +buscar, 'lo siento';
+        h2.style.display="none";
+        tablaCanciones.style.display="none";
+        tablaCancionesDos.style.display="none";
             }
         for( let i=0; i<infoArtistas.length;i++){
             contenido += `<article class="imagencontexto">
@@ -111,8 +109,31 @@ fetch(Canciones)
                 <td class="player><img src="${infoCanciones[i].artist.picture_small}"><a href="detalle_cancion.html?id=${infoCanciones[i].id}">${infoCanciones[i].title}</a></td>
                 <td class="columna"></td>
                 <td class="columna"><a href="detalle_artistas.html?id=${infoCanciones[i].id}">${infoCanciones[i].artist.name}</a></td>
-                <td class="columna tiempo"><a href="detalle_disco.html?id=${infoCanciones[i].id}">${infoCanciones[i].album.title}</a></td>
-                <td class="columna tiempo">${infoCanciones[i].duration}</td>
+            </tr>`
+        }
+        songs.innerHTML += contenidoCanciones;
+        })
+    .catch(function(error){
+        console.log(error);
+        })
+
+        fetch(Canciones)
+    .then(function(response){
+        return response.json();
+    })
+    .then(function (data){
+        console.log(data);
+        let songs= document.querySelector(".informacionResultados2");
+        let infoCanciones= data.data ;
+        let contenidoCanciones = '';
+        for( let i=0; i<infoCanciones.length;i++){
+            contenidoCanciones +=	
+            `<tr> 
+                <td class="player><img src="${infoCanciones[i].artist.picture_small}"><a href="detalle_cancion.html?id=${infoCanciones[i].id}">${infoCanciones[i].title}</a></td>
+                <td class="columna"></td>
+                <td class="columna"><a href="detalle_artistas.html?id=${infoCanciones[i].id}">${infoCanciones[i].artist.name}</a></td>
+                <td class="columna"><a href="detalle_disco.html?id=${infoCanciones[i].id}">${infoCanciones[i].album.title}</a></td>
+                <td class="columna">${infoCanciones[i].duration}</td>
             </tr>`
         }
         songs.innerHTML += contenidoCanciones;

@@ -568,10 +568,14 @@ article .numero{
 }
 .tablacanciones{
     font-size: 12px;
+    text-align: center;
 }
 .columna{
     width:20%;
     text-align: center;
+}
+.tablacanciones2{
+    display: none;
 }
 /*ESTILO DESKTOP*/
 @media (min-width: 1024px) {
@@ -816,6 +820,10 @@ tr{
     font-size: 24px;
 }
 .tablacanciones{
+    display: none;
+}
+.tablacanciones2{
+    display: block;
     font-size: 20px;
     margin: 2%;
 }
