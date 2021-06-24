@@ -27,7 +27,8 @@ let favoritos = JSON.parse(recuperoStorage);
 
 //sección del título en mobile
 let numeroCanciones= document.querySelector('.numeroCanciones');
-numeroCanciones.innerText = favoritos.length;
+numeroCanciones.innerText= favoritos.length;
+
 
 //sección de las canciones en desktop
 let reproducciones= document.querySelector('.reproducciones');
