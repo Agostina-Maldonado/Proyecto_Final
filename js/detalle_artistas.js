@@ -19,7 +19,6 @@ event.preventDefault(); //Detenemos el comportamiento default del formulario que
     alert.innerHTML ='';
     })
 })
-console.log('hola');
 let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString);
 let id = queryStringToObject.get('id');
