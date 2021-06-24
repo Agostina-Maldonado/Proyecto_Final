@@ -251,6 +251,7 @@ img{
     flex-wrap: wrap;
     font-size: auto;
     justify-content: center;
+    color: white;
 }
 .card-genero{
     width: 80%;
