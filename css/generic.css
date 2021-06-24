@@ -14,6 +14,9 @@ a{
     color: white;
 }
 /*GENERALES*/
+i{
+    color: white;
+}
 body{
     background-color:#0A142F;
     font-family: 'Rubik', sans-serif;
@@ -505,35 +508,24 @@ article .numero{
 }
 
 /* search results */
-h2{
-    color: white;
-    font-size: 15px;
-}
-.search-artist{
+.imagencontexto{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 40%;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+    text-align: center;
 }
-.search-artist article{
-    width: 40%;
-}
-img{
-    width: 100%;
-}
-article{
-    width: 100%;
-}
-
-.player{
+.card-image-artista{
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: start;
+    align-items: center;
 }
-i{
-    color: white;
+.card-nombre-artista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .search_albumes{
     display: flex;
@@ -541,20 +533,11 @@ i{
     flex-wrap: wrap;
     align-items: center;
 }
-.card-imageAlbum{
-    width: 50%;
-}
 .img_album{
     border-radius: 50%;
     width: 70px;
     margin-right: 20px;
     margin: 23px 60px;
-}
-.imagenesYparrafos{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
 }
 .card-album{
     display: flex;
@@ -563,14 +546,31 @@ i{
     justify-content: space-between;
     align-items: center;
 }
+.player{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+}
 .loader{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 200px;
 }
-/* search */
 .leyenda{
     display: none;
+}
+.tituloinfo{
+    font-size: 40px;
+}
+.tablacanciones{
+    font-size: 12px;
+}
+.columna{
+    width:20%;
+    text-align: center;
 }
 /*ESTILO DESKTOP*/
 @media (min-width: 1024px) {
@@ -695,7 +695,6 @@ i{
 .boton{
     font-size: 16px;
     width: 45%;
-;
 }
 
  /*detalle artista*/
@@ -790,31 +789,20 @@ tr{
 }
 /* Search Results*/
 .search_albumes{
-    width: 100%;
-    display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 .card-imageAlbum{
-    width: 100%;
-    align-items: center;
     margin: 20px;
 }
 .img_album{
     border-radius: 100%;
     width: 150px;
     margin: 20px 168px;
-
 }
-.imagenesYparrafos{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.imagencontexto{
+    width: 45%;
     justify-content: center;
-    flex-wrap: wrap;
 }
 .fav{
     font-size: 16px;  
@@ -826,6 +814,11 @@ tr{
 .album{
     font-size: 24px;
 }
+.tablacanciones{
+    font-size: 20px;
+    margin: 2%;
+}
+
 /* playlist */
 .white_mobile{
     display: none;
@@ -853,12 +846,6 @@ div.icono{
 .player p{
     padding: 0px 25px;
     font-size: 30px;
-}
-.segunda_seccion{
-    display: none;
-}
-.table {
-    display: table; 
 }
 .segunda_seccion{
     display: none;

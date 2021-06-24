@@ -54,11 +54,11 @@ fetch(artistas)
         informacion.innerText= 'No encontramos resultados, lo siento ';
             }
         for( let i=0; i<infoArtistas.length;i++){
-            contenido += `	<article class="imagen_y_texto">
-            <div class="card-image">
-                <img class="img_artista" src="${infoArtistas[i].picture_small}" alt="justin bieber">
+            contenido += `<article class="imagencontexto">
+            <div class="card-image-artista">
+                <img class="img_artista" src="${infoArtistas[i].picture_small}" alt="${infoArtistas[i].name}">
             </div>
-            <div class="card-nombre_artista">
+            <div class="card-nombre-artista">
                 <h3><a href="./detalle_artistas.html?id=${infoArtistas[i].id}">${infoArtistas[i].name}</a></h3>
             </div>	
         </article>`
@@ -79,7 +79,7 @@ fetch(albumes)
         let infoAlbum= data.data ;
         let contenidoAlbum = ''
         for( let i=0; i<infoAlbum.length;i++){
-            contenidoAlbum += `<article class="imagenesYparrafos">
+            contenidoAlbum += `<article class="imagencontexto">
                 <div class="card-imageAlbum">
                     <img class="img_album" src="${infoAlbum[i].cover_small}" alt="justin bieber">
                  </div>
@@ -109,10 +109,10 @@ fetch(Canciones)
             contenidoCanciones +=	
             `<tr> 
                 <td class="player><img src="${infoCanciones[i].artist.picture_small}"><a href="detalle_cancion.html?id=${infoCanciones[i].id}">${infoCanciones[i].title}</a></td>
-                <td></td>
-                <td><a href="detalle_artistas.html?id=${infoCanciones[i].id}">${infoCanciones[i].artist.name}</a></td>
-                <td><a href="detalle_disco.html?id=${infoCanciones[i].id}">${infoCanciones[i].album.title}</a></td>
-                <td>${infoCanciones[i].duration}</td>
+                <td class="columna"></td>
+                <td class="columna"><a href="detalle_artistas.html?id=${infoCanciones[i].id}">${infoCanciones[i].artist.name}</a></td>
+                <td class="columna tiempo"><a href="detalle_disco.html?id=${infoCanciones[i].id}">${infoCanciones[i].album.title}</a></td>
+                <td class="columna tiempo">${infoCanciones[i].duration}</td>
             </tr>`
         }
         songs.innerHTML += contenidoCanciones;
