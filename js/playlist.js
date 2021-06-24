@@ -25,6 +25,13 @@ let recuperoStorage= localStorage.getItem('favoritos');
 //Voy a pasar de string a array para poder trabajar 
 let favoritos = JSON.parse(recuperoStorage);
 
+//sección del título en mobile
+let numeroCanciones= document.querySelector('.numeroCanciones');
+numeroCanciones.innerText = favoritos.length;
+//sección de las canciones en desktop
+let reproducciones= document.querySelector('.reproducciones');
+reproducciones.innerText=  favoritos.length;
+
 //Segunda sección en mobile
 
 //Si hay datos, necesito recorrer el array (bucle for)
