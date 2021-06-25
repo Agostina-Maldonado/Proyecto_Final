@@ -19,7 +19,7 @@ event.preventDefault(); //Detenemos el comportamiento default del formulario que
     alert.innerHTML ='';
     })
 })
-
+//Obteniendo datos de la query string 
 let queryString = location.search;
 let queryStringToObject = new URLSearchParams(queryString);
 let id = queryStringToObject.get('id');
@@ -49,21 +49,20 @@ fetch(url)
         console.log(error);
     })
 
-//Creo el array para agregar una canción a lista de favoritos
 let favoritos = [];
-//Recuperar datos del storage (me fijo si ya hay información guardada en el storage)
 let recuperoStorage= localStorage.getItem('favoritos');
-// En el caso de que haya información en el storage, la grego en mi variable favoritos que contiene el array
-if(recuperoStorage != null){ //si me devolvió algo de datos (distinto de null), entonces a esos datos los voy a parsear para que me lo devuelva en formato de array y así poder trabajar en este.
+if(recuperoStorage != null){ 
     favoritos = JSON.parse(recuperoStorage);
 }
 
 //Chequear que el id está en el array para cambiar el texto al usuario
+
 if(favoritos.includes(id)){
     document.querySelector('.fav').innerText = "Quitar de favoritos";
 }
 
 //Agregar ID de la canción dentro del array cuando el asuario haga click en agregar a favoritos.
+
 let fav = document.querySelector('.fav');
 fav.addEventListener('click', function(e){
     e.preventDefault(); //como el link tiene un comportamiento default acá lo paro.
@@ -72,10 +71,10 @@ fav.addEventListener('click', function(e){
     if(favoritos.includes(id)){
         let idASacar = favoritos.indexOf(id);
         favoritos.splice(idASacar, 1); 
-        document.querySelector('.fav').innerText = "Agregar a favoritos"; //Acá ya estamos seguros de que el elemento no está más, entonces le vamos a volver a mostrar al usuario el agregar a favoritos.
+        document.querySelector('.fav').innerText = "Agregar a favoritos"; 
     } else{
         //Guardamos el id en el array
-        favoritos.push(id); //A favoritos(array) le pusheo el id que ya capture en la línea 25
+        favoritos.push(id); 
         console.log(favoritos);
         document.querySelector('.fav').innerText = "Quitar de favoritos";
     }
