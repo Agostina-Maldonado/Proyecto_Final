@@ -59,7 +59,7 @@ fetch (url)
         console.log(data);
         let sencillos= document.querySelector('.sencillos');
         let infoCanciones= data.data;
-        let contenidoSencillos= ''
+        let contenidoSencillos= '';
         for (let i=0;i<9;i++){
             contenidoSencillos += `<article class="infoHome">
             <img src= "${infoCanciones[i].artist.picture_medium}">
